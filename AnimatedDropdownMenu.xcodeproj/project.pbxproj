@@ -13,6 +13,8 @@
 		D361E8F21E5EC31300182DED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D361E8F01E5EC31300182DED /* Main.storyboard */; };
 		D361E8F41E5EC31300182DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D361E8F31E5EC31300182DED /* Assets.xcassets */; };
 		D361E8F71E5EC31300182DED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D361E8F51E5EC31300182DED /* LaunchScreen.storyboard */; };
+		D3906A371E6419E00037FEC5 /* AnimatedDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A361E6419E00037FEC5 /* AnimatedDropdownMenu.swift */; };
+		D3906A391E641AA10037FEC5 /* DropdownTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A381E641AA10037FEC5 /* DropdownTableView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		D361E8F31E5EC31300182DED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D361E8F61E5EC31300182DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D361E8F81E5EC31300182DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3906A361E6419E00037FEC5 /* AnimatedDropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatedDropdownMenu.swift; path = AnimatedDropdownMenu/DropdownMenu/AnimatedDropdownMenu.swift; sourceTree = SOURCE_ROOT; };
+		D3906A381E641AA10037FEC5 /* DropdownTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DropdownTableView.swift; path = AnimatedDropdownMenu/DropdownMenu/DropdownTableView.swift; sourceTree = SOURCE_ROOT; };
 		FFCE15753C06298EBFA4C0F7 /* Pods_AnimatedDropdownMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimatedDropdownMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,6 +82,7 @@
 		D361E8EB1E5EC31300182DED /* AnimatedDropdownMenu */ = {
 			isa = PBXGroup;
 			children = (
+				D361E8FE1E5ECB8600182DED /* DropdownMenu */,
 				D361E8EC1E5EC31300182DED /* AppDelegate.swift */,
 				D361E8EE1E5EC31300182DED /* ViewController.swift */,
 				D361E8F01E5EC31300182DED /* Main.storyboard */,
@@ -85,6 +90,16 @@
 				D361E8F51E5EC31300182DED /* LaunchScreen.storyboard */,
 				D361E8F81E5EC31300182DED /* Info.plist */,
 			);
+			path = AnimatedDropdownMenu;
+			sourceTree = "<group>";
+		};
+		D361E8FE1E5ECB8600182DED /* DropdownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				D3906A361E6419E00037FEC5 /* AnimatedDropdownMenu.swift */,
+				D3906A381E641AA10037FEC5 /* DropdownTableView.swift */,
+			);
+			name = DropdownMenu;
 			path = AnimatedDropdownMenu;
 			sourceTree = "<group>";
 		};
@@ -212,7 +227,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3906A371E6419E00037FEC5 /* AnimatedDropdownMenu.swift in Sources */,
 				D361E8EF1E5EC31300182DED /* ViewController.swift in Sources */,
+				D3906A391E641AA10037FEC5 /* DropdownTableView.swift in Sources */,
 				D361E8ED1E5EC31300182DED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
