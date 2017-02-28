@@ -1,5 +1,5 @@
 //
-//  DropdownTableView.swift
+//  DropdownMenuTableView.swift
 //  AnimatedDropdownMenu
 //
 //  Created by JonyFang on 17/2/27.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DropdownTableView: UITableView {
+class DropdownMenuTableView: UITableView {
     
     public struct Item {
         public let title: String
@@ -37,7 +37,7 @@ class DropdownTableView: UITableView {
     }
 }
 
-extension DropdownTableView: UITableViewDataSource {
+extension DropdownMenuTableView: UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
@@ -55,7 +55,7 @@ extension DropdownTableView: UITableViewDataSource {
     }
 }
 
-extension DropdownTableView: UITableViewDelegate {
+extension DropdownMenuTableView: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 50
