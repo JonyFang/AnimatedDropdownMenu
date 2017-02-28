@@ -20,20 +20,24 @@ class DropdownMenuTableView: UITableView {
     
     fileprivate var selectedIndexPath: Int?
     fileprivate var items: [Item] = []
+    fileprivate var dropdownMenuConfig: DropdownMenuConfig!
+    fileprivate let kDropdownMenuTableViewCell = "DropdownMenuTableViewCell"
     
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(frame: CGRect, items: [Item], selectedIndexPath: Int) {
+    init(frame: CGRect, items: [Item], selectedIndexPath: Int, config: DropdownMenuConfig) {
         super.init(frame: frame, style: .plain)
         
         self.items = items
         self.selectedIndexPath = selectedIndexPath
+        self.dropdownMenuConfig = config
         
         delegate = self
         dataSource = self
         separatorStyle = .none
+        backgroundColor = .clear
     }
 }
 
@@ -49,8 +53,9 @@ extension DropdownMenuTableView: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        //TODO: Configure cell
-        let cell = UITableViewCell()
+        let cell = DropdownMenuTableViewCell(style: .default, reuseIdentifier: kDropdownMenuTableViewCell, config: dropdownMenuConfig)
+        cell.textLabel?.text = items[indexPath.row].title
+        
         return cell
     }
 }
@@ -58,22 +63,38 @@ extension DropdownMenuTableView: UITableViewDataSource {
 extension DropdownMenuTableView: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return dropdownMenuConfig.cellHeight
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        //TODO: guard indexPath
         selectedIndexPath = indexPath.row
         selectRowAtIndexPathHandler!(indexPath.row)
         reloadData()
+        
+//        let cell = tableView.cellForRow(at: indexPath) as? DropdownMenuTableViewCell
+//        cell?.contentView.backgroundColor = dropdownMenuConfig.cellSelectionColor
+//        cell?.textLabel?.textColor = dropdownMenuConfig.cellTextLabelSelectedColor
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        //TODO: Configure Deselected Cell
+        
+//        let cell = tableView.cellForRow(at: indexPath) as? DropdownMenuTableViewCell
+//        cell?.contentView.backgroundColor = dropdownMenuConfig.cellBackgroundColor
+//        cell?.textLabel?.textColor = dropdownMenuConfig.cellTextLabelColor
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        //TODO: Configure tableViewCell
+        
+        guard dropdownMenuConfig.shouldKeepSelectedCellColor! else {
+            return
+        }
+        
+        let tableCell = cell as! DropdownMenuTableViewCell
+        
+        tableCell.textLabel?.textColor = (indexPath.row == selectedIndexPath) ?
+            dropdownMenuConfig.cellTextLabelSelectedColor :
+            dropdownMenuConfig.cellTextLabelColor
+        tableCell.iconImageView?.image = (indexPath.row == selectedIndexPath) ? items[indexPath.row].iconLight : items[indexPath.row].icon
     }
 }
