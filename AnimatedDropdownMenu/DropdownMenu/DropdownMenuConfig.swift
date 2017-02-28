@@ -21,6 +21,7 @@ class DropdownMenuConfig {
     var cellTextLabelAlignment: NSTextAlignment!
     var cellTextLabelSelectedColor: UIColor?
     var cellSelectionColor: UIColor?
+    var cellIconImage: UIImage!
     
     var arrowTintColor: UIColor?
     var arrowPadding: CGFloat!

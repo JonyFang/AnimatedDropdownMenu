@@ -17,6 +17,7 @@
 		D3906A391E641AA10037FEC5 /* DropdownMenuTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A381E641AA10037FEC5 /* DropdownMenuTableView.swift */; };
 		D3906A3D1E64F5F30037FEC5 /* DropdownMenuConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A3C1E64F5F30037FEC5 /* DropdownMenuConfig.swift */; };
 		D3906A3F1E64FE300037FEC5 /* AnimatedDropdownMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D3906A3E1E64FE300037FEC5 /* AnimatedDropdownMenu.bundle */; };
+		D3906A411E650E510037FEC5 /* DropdownMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A401E650E510037FEC5 /* DropdownMenuTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		D3906A381E641AA10037FEC5 /* DropdownMenuTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DropdownMenuTableView.swift; path = AnimatedDropdownMenu/DropdownMenu/DropdownMenuTableView.swift; sourceTree = SOURCE_ROOT; };
 		D3906A3C1E64F5F30037FEC5 /* DropdownMenuConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DropdownMenuConfig.swift; path = AnimatedDropdownMenu/DropdownMenu/DropdownMenuConfig.swift; sourceTree = SOURCE_ROOT; };
 		D3906A3E1E64FE300037FEC5 /* AnimatedDropdownMenu.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AnimatedDropdownMenu.bundle; path = AnimatedDropdownMenu/DropdownMenu/AnimatedDropdownMenu.bundle; sourceTree = SOURCE_ROOT; };
+		D3906A401E650E510037FEC5 /* DropdownMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DropdownMenuTableViewCell.swift; path = AnimatedDropdownMenu/DropdownMenu/DropdownMenuTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		FFCE15753C06298EBFA4C0F7 /* Pods_AnimatedDropdownMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimatedDropdownMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -101,8 +103,9 @@
 			isa = PBXGroup;
 			children = (
 				D3906A361E6419E00037FEC5 /* AnimatedDropdownMenu.swift */,
-				D3906A381E641AA10037FEC5 /* DropdownMenuTableView.swift */,
 				D3906A3C1E64F5F30037FEC5 /* DropdownMenuConfig.swift */,
+				D3906A381E641AA10037FEC5 /* DropdownMenuTableView.swift */,
+				D3906A401E650E510037FEC5 /* DropdownMenuTableViewCell.swift */,
 				D3906A3E1E64FE300037FEC5 /* AnimatedDropdownMenu.bundle */,
 			);
 			name = DropdownMenu;
@@ -237,6 +240,7 @@
 				D3906A371E6419E00037FEC5 /* AnimatedDropdownMenu.swift in Sources */,
 				D361E8EF1E5EC31300182DED /* ViewController.swift in Sources */,
 				D3906A3D1E64F5F30037FEC5 /* DropdownMenuConfig.swift in Sources */,
+				D3906A411E650E510037FEC5 /* DropdownMenuTableViewCell.swift in Sources */,
 				D3906A391E641AA10037FEC5 /* DropdownMenuTableView.swift in Sources */,
 				D361E8ED1E5EC31300182DED /* AppDelegate.swift in Sources */,
 			);
