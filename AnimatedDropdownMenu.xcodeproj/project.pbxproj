@@ -15,7 +15,7 @@
 		D361E8F71E5EC31300182DED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D361E8F51E5EC31300182DED /* LaunchScreen.storyboard */; };
 		D3906A371E6419E00037FEC5 /* AnimatedDropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A361E6419E00037FEC5 /* AnimatedDropdownMenu.swift */; };
 		D3906A391E641AA10037FEC5 /* DropdownTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A381E641AA10037FEC5 /* DropdownTableView.swift */; };
-		D3906A3D1E64F5F30037FEC5 /* DropdownConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A3C1E64F5F30037FEC5 /* DropdownConfig.swift */; };
+		D3906A3D1E64F5F30037FEC5 /* DropdownMenuConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A3C1E64F5F30037FEC5 /* DropdownMenuConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,7 @@
 		D361E8F81E5EC31300182DED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3906A361E6419E00037FEC5 /* AnimatedDropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AnimatedDropdownMenu.swift; path = AnimatedDropdownMenu/DropdownMenu/AnimatedDropdownMenu.swift; sourceTree = SOURCE_ROOT; };
 		D3906A381E641AA10037FEC5 /* DropdownTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DropdownTableView.swift; path = AnimatedDropdownMenu/DropdownMenu/DropdownTableView.swift; sourceTree = SOURCE_ROOT; };
-		D3906A3C1E64F5F30037FEC5 /* DropdownConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DropdownConfig.swift; path = AnimatedDropdownMenu/DropdownMenu/DropdownConfig.swift; sourceTree = SOURCE_ROOT; };
+		D3906A3C1E64F5F30037FEC5 /* DropdownMenuConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DropdownMenuConfig.swift; path = AnimatedDropdownMenu/DropdownMenu/DropdownMenuConfig.swift; sourceTree = SOURCE_ROOT; };
 		FFCE15753C06298EBFA4C0F7 /* Pods_AnimatedDropdownMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimatedDropdownMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -100,7 +100,7 @@
 			children = (
 				D3906A361E6419E00037FEC5 /* AnimatedDropdownMenu.swift */,
 				D3906A381E641AA10037FEC5 /* DropdownTableView.swift */,
-				D3906A3C1E64F5F30037FEC5 /* DropdownConfig.swift */,
+				D3906A3C1E64F5F30037FEC5 /* DropdownMenuConfig.swift */,
 			);
 			name = DropdownMenu;
 			path = AnimatedDropdownMenu;
@@ -232,7 +232,7 @@
 			files = (
 				D3906A371E6419E00037FEC5 /* AnimatedDropdownMenu.swift in Sources */,
 				D361E8EF1E5EC31300182DED /* ViewController.swift in Sources */,
-				D3906A3D1E64F5F30037FEC5 /* DropdownConfig.swift in Sources */,
+				D3906A3D1E64F5F30037FEC5 /* DropdownMenuConfig.swift in Sources */,
 				D3906A391E641AA10037FEC5 /* DropdownTableView.swift in Sources */,
 				D361E8ED1E5EC31300182DED /* AppDelegate.swift in Sources */,
 			);

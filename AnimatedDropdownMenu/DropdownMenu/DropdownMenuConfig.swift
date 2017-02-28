@@ -1,5 +1,5 @@
 //
-//  DropdownConfig.swift
+//  DropdownMenuConfig.swift
 //  AnimatedDropdownMenu
 //
 //  Created by JonyFang on 17/2/28.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DropdownConfig {
+class DropdownMenuConfig {
     
     var menuTitleColor: UIColor?
     var menuTitleFont: UIFont!
