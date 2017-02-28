@@ -37,8 +37,13 @@ class DropdownMenuConfig {
     }
     
     fileprivate func configDefaultValue() {
-        //TODO: Add image
+        //Path for image
+        let bundle = Bundle(for: DropdownMenuConfig.self)
+        let bundleUrl = bundle.url(forResource: "AnimatedDropdownMenu", withExtension: "bundle")
+        let imageBundle = Bundle(url: bundleUrl!)
+        let arrowImagePath = imageBundle?.path(forResource: "icon_dropdown_down", ofType: "pdf")
         
+        //Default values
         menuTitleColor = UIColor.darkGray
         menuTitleFont = UIFont.systemFont(ofSize: 16.0)
             
@@ -53,7 +58,7 @@ class DropdownMenuConfig {
         
         arrowTintColor = UIColor.white
         arrowPadding = 15.0
-        arrowImage = UIImage(contentsOfFile: "")
+        arrowImage = UIImage(contentsOfFile: arrowImagePath!)
         
         maskBuckgroundColor = UIColor.black
         maskBackgroundOpacity = 0.5
