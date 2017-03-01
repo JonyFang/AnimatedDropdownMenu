@@ -42,7 +42,7 @@ class DropdownMenuConfig {
         let bundle = Bundle(for: DropdownMenuConfig.self)
         let bundleUrl = bundle.url(forResource: "AnimatedDropdownMenu", withExtension: "bundle")
         let imageBundle = Bundle(url: bundleUrl!)
-        let arrowImagePath = imageBundle?.path(forResource: "icon_dropdown_down", ofType: "pdf")
+        let arrowImagePath = imageBundle?.path(forResource: "icon_dropdown_down", ofType: "png")
         
         //Default values
         menuTitleColor = UIColor.darkGray
