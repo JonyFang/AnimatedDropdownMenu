@@ -142,6 +142,7 @@ class AnimatedDropdownMenu: UIView {
         menuTitleLabel.textAlignment = dropdownConfig.cellTextLabelAlignment
         
         menuArrow = UIImageView(image: dropdownConfig.arrowImage.withRenderingMode(.alwaysTemplate))
+        menuArrow.tintColor = dropdownConfig.arrowTintColor
         
         addSubview(menuButton)
         menuButton.addSubview(menuTitleLabel)
