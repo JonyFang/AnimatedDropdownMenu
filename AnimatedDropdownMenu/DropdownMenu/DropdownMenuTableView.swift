@@ -67,17 +67,6 @@ extension DropdownMenuTableView: UITableViewDelegate {
         selectedIndex = indexPath.row
         selectRowAtIndexPathHandler!(indexPath.row)
         reloadData()
-        
-//        let cell = tableView.cellForRow(at: indexPath) as? DropdownMenuTableViewCell
-//        cell?.contentView.backgroundColor = dropdownMenuConfig.cellSelectionColor
-//        cell?.textLabel?.textColor = dropdownMenuConfig.cellTextLabelSelectedColor
-    }
-    
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        
-//        let cell = tableView.cellForRow(at: indexPath) as? DropdownMenuTableViewCell
-//        cell?.contentView.backgroundColor = dropdownMenuConfig.cellBackgroundColor
-//        cell?.textLabel?.textColor = dropdownMenuConfig.cellTextLabelColor
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
