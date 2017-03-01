@@ -19,6 +19,7 @@
 		D3906A3F1E64FE300037FEC5 /* AnimatedDropdownMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D3906A3E1E64FE300037FEC5 /* AnimatedDropdownMenu.bundle */; };
 		D3906A411E650E510037FEC5 /* DropdownMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A401E650E510037FEC5 /* DropdownMenuTableViewCell.swift */; };
 		D3906A441E66E4DB0037FEC5 /* UIColor+DropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A431E66E4DB0037FEC5 /* UIColor+DropdownMenu.swift */; };
+		D3906A461E66ECD20037FEC5 /* UIFont+DropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A451E66ECD20037FEC5 /* UIFont+DropdownMenu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		D3906A3E1E64FE300037FEC5 /* AnimatedDropdownMenu.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = AnimatedDropdownMenu.bundle; path = AnimatedDropdownMenu/DropdownMenu/AnimatedDropdownMenu.bundle; sourceTree = SOURCE_ROOT; };
 		D3906A401E650E510037FEC5 /* DropdownMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DropdownMenuTableViewCell.swift; path = AnimatedDropdownMenu/DropdownMenu/DropdownMenuTableViewCell.swift; sourceTree = SOURCE_ROOT; };
 		D3906A431E66E4DB0037FEC5 /* UIColor+DropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+DropdownMenu.swift"; sourceTree = "<group>"; };
+		D3906A451E66ECD20037FEC5 /* UIFont+DropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+DropdownMenu.swift"; sourceTree = "<group>"; };
 		FFCE15753C06298EBFA4C0F7 /* Pods_AnimatedDropdownMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimatedDropdownMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -119,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				D3906A431E66E4DB0037FEC5 /* UIColor+DropdownMenu.swift */,
+				D3906A451E66ECD20037FEC5 /* UIFont+DropdownMenu.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -254,6 +257,7 @@
 				D3906A411E650E510037FEC5 /* DropdownMenuTableViewCell.swift in Sources */,
 				D3906A441E66E4DB0037FEC5 /* UIColor+DropdownMenu.swift in Sources */,
 				D3906A391E641AA10037FEC5 /* DropdownMenuTableView.swift in Sources */,
+				D3906A461E66ECD20037FEC5 /* UIFont+DropdownMenu.swift in Sources */,
 				D361E8ED1E5EC31300182DED /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

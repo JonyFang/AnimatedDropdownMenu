@@ -87,7 +87,7 @@ class ViewController: UIViewController {
         
         let textAttributes: [String: Any] = [
             NSForegroundColorAttributeName: UIColor.menuLightTextColor(),
-            NSFontAttributeName: UIFont.boldSystemFont(ofSize: 16.0)
+            NSFontAttributeName: UIFont.navigationBarTitleFont()
         ]
         
         navigationController?.navigationBar.titleTextAttributes = textAttributes
