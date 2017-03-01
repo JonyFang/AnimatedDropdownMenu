@@ -221,6 +221,7 @@ class AnimatedDropdownMenu: UIView {
     
     @objc fileprivate func hideMenu() {
         isShown = false
+        menuButton.isUserInteractionEnabled = false
         
         //Rotate Arrow
         rotateArrowAnimation()
@@ -238,11 +239,13 @@ class AnimatedDropdownMenu: UIView {
                         self.backgroundView.alpha = 0
         }) { finished in
             self.menuWrapper.isHidden = true
+            self.menuButton.isUserInteractionEnabled = true
         }
     }
     
     fileprivate func showMenu() {
         isShown = true
+        menuButton.isUserInteractionEnabled = false
         
         menuWrapper.frame.origin.y = (navigationController?.navigationBar.frame.maxY)!
         
@@ -266,7 +269,7 @@ class AnimatedDropdownMenu: UIView {
             self.tableView.frame.origin.y = CGFloat(-300.0)
             self.backgroundView.alpha = self.dropdownConfig.maskBackgroundOpacity
         }) { finished in
-            //
+            self.menuButton.isUserInteractionEnabled = true
         }
     }
     
