@@ -157,6 +157,8 @@ class AnimatedDropdownMenu: UIView {
         
         //Setup TableView
         tableView = DropdownMenuTableView(frame: CGRect(x: menuWrapperBounds.origin.x, y: -300.0, width: menuWrapperBounds.width, height: 300.0 + dropdownConfig.cellHeight * CGFloat(items.count)), items: items, selectedIndex: selectedIndex, config: dropdownConfig)
+        tableView.layer.cornerRadius = 5.0
+        tableView.layer.masksToBounds = true
         tableView.selectRowAtIndexPathHandler = {
             [weak self] selectedIndex in
             guard let strongSelf = self else {
