@@ -10,16 +10,10 @@ import UIKit
 
 class DropdownMenuTableView: UITableView {
     
-    public struct Item {
-        public let title: String
-        public let icon: UIImage
-        public let iconLight: UIImage
-    }
-    
     public var selectRowAtIndexPathHandler: ((_ indexPath: Int) -> ())?
     
     fileprivate var selectedIndex: Int?
-    fileprivate var items: [Item] = []
+    fileprivate var items: [AnimatedDropdownMenu.Item] = []
     fileprivate var dropdownMenuConfig: DropdownMenuConfig!
     fileprivate let kDropdownMenuTableViewCell = "DropdownMenuTableViewCell"
     
@@ -27,7 +21,7 @@ class DropdownMenuTableView: UITableView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(frame: CGRect, items: [Item], selectedIndex: Int, config: DropdownMenuConfig) {
+    init(frame: CGRect, items: [AnimatedDropdownMenu.Item], selectedIndex: Int, config: DropdownMenuConfig) {
         super.init(frame: frame, style: .plain)
         
         self.items = items

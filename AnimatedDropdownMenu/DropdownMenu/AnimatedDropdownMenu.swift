@@ -10,6 +10,12 @@ import UIKit
 
 class AnimatedDropdownMenu: UIView {
     
+    public struct Item {
+        public let title: String
+        public let icon: UIImage
+        public let iconLight: UIImage
+    }
+    
     public var didSelectItemAtIndexHandler: ((_ indexPath: Int) -> ())?
     public var isShown: Bool!
     
@@ -66,7 +72,7 @@ class AnimatedDropdownMenu: UIView {
     fileprivate var backgroundView: UIView!
     fileprivate var tableView: DropdownMenuTableView!
     
-    fileprivate var items:[DropdownMenuTableView.Item]!
+    fileprivate var items:[Item]!
     fileprivate var dropdownConfig = DropdownMenuConfig()
     
     required public init?(coder aDecoder: NSCoder) {
@@ -87,7 +93,7 @@ class AnimatedDropdownMenu: UIView {
         }
     }
     
-    public init(navigationController: UINavigationController!, containerView: UIView!, selectedIndex: Int!, items: [DropdownMenuTableView.Item]!) {
+    public init(navigationController: UINavigationController!, containerView: UIView!, selectedIndex: Int!, items: [Item]!) {
         guard let window = UIApplication.shared.keyWindow else {
             super.init(frame: .zero)
             return
