@@ -55,12 +55,21 @@ class AnimatedDropdownMenu: UIView {
         }
     }
     
-    public var cellTextLabelColor: UIColor! {
+    public var cellTextColor: UIColor! {
         get {
             return dropdownConfig.cellTextLabelColor
         }
         set(value) {
             dropdownConfig.cellTextLabelColor = value
+        }
+    }
+    
+    public var cellTextSelectedColor: UIColor! {
+        get {
+            return dropdownConfig.cellTextLabelSelectedColor
+        }
+        set(value) {
+            dropdownConfig.cellTextLabelSelectedColor = value
         }
     }
     
@@ -200,7 +209,7 @@ class AnimatedDropdownMenu: UIView {
         menuTitleColor = navigationController?.navigationBar.titleTextAttributes?[NSForegroundColorAttributeName] as? UIColor
         cellBackgroundColor = navigationController?.navigationBar.barTintColor
         cellSeparatorColor = menuTitleColor
-        cellTextLabelColor = menuTitleColor
+        cellTextColor = menuTitleColor
         
         menuArrowTintColor = menuTitleColor
     }
