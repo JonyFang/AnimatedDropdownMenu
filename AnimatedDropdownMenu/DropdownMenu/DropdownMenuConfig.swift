@@ -58,7 +58,7 @@ class DropdownMenuConfig {
         cellSelectionColor = UIColor.darkGray
         
         arrowTintColor = UIColor.white
-        arrowPadding = 15.0
+        arrowPadding = 10.0
         arrowImage = UIImage(contentsOfFile: arrowImagePath!)
         
         maskBuckgroundColor = UIColor.black
