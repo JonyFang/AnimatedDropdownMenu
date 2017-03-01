@@ -55,12 +55,21 @@ class AnimatedDropdownMenu: UIView {
         }
     }
     
-    public var cellTextLabelColor: UIColor! {
+    public var cellTextColor: UIColor! {
         get {
             return dropdownConfig.cellTextLabelColor
         }
         set(value) {
             dropdownConfig.cellTextLabelColor = value
+        }
+    }
+    
+    public var cellTextSelectedColor: UIColor! {
+        get {
+            return dropdownConfig.cellTextLabelSelectedColor
+        }
+        set(value) {
+            dropdownConfig.cellTextLabelSelectedColor = value
         }
     }
     
@@ -133,6 +142,7 @@ class AnimatedDropdownMenu: UIView {
         menuTitleLabel.textAlignment = dropdownConfig.cellTextLabelAlignment
         
         menuArrow = UIImageView(image: dropdownConfig.arrowImage.withRenderingMode(.alwaysTemplate))
+        menuArrow.tintColor = dropdownConfig.arrowTintColor
         
         addSubview(menuButton)
         menuButton.addSubview(menuTitleLabel)
@@ -156,10 +166,9 @@ class AnimatedDropdownMenu: UIView {
         setupDefaultConfiguration()
         
         //Setup TableView
-//        let navigationBarHeight = navigationController.navigationBar.bounds.height 
-//        let statusBarHeight = UIApplication.shared.statusBarFrame.height
-        
         tableView = DropdownMenuTableView(frame: CGRect(x: menuWrapperBounds.origin.x, y: -300.0, width: menuWrapperBounds.width, height: 300.0 + dropdownConfig.cellHeight * CGFloat(items.count)), items: items, selectedIndex: selectedIndex, config: dropdownConfig)
+        tableView.layer.cornerRadius = 5.0
+        tableView.layer.masksToBounds = true
         tableView.selectRowAtIndexPathHandler = {
             [weak self] selectedIndex in
             guard let strongSelf = self else {
@@ -201,7 +210,7 @@ class AnimatedDropdownMenu: UIView {
         menuTitleColor = navigationController?.navigationBar.titleTextAttributes?[NSForegroundColorAttributeName] as? UIColor
         cellBackgroundColor = navigationController?.navigationBar.barTintColor
         cellSeparatorColor = menuTitleColor
-        cellTextLabelColor = menuTitleColor
+        cellTextColor = menuTitleColor
         
         menuArrowTintColor = menuTitleColor
     }

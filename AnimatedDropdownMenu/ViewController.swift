@@ -38,6 +38,8 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         setupAnimatedDropdownMenu()
+        
+        view.backgroundColor = UIColor.menuBackgroundColor()
     }
     
     // MARK: - Private Methods
@@ -45,6 +47,13 @@ class ViewController: UIViewController {
     fileprivate func setupAnimatedDropdownMenu() {
         
         let dropdownMenu = AnimatedDropdownMenu(navigationController: navigationController, containerView: view, selectedIndex: selectedStageIndex, items: dropdownItems)
+        
+        dropdownMenu.cellBackgroundColor = UIColor.menuBackgroundColor()
+        dropdownMenu.menuTitleColor = UIColor.menuLightTextColor()
+        dropdownMenu.menuArrowTintColor = UIColor.menuLightTextColor()
+        dropdownMenu.cellTextColor = UIColor.menuLightGrayColor()
+        dropdownMenu.cellTextSelectedColor = UIColor.menuLightTextColor()
+        
         dropdownMenu.didSelectItemAtIndexHandler = {
             [weak self] selectedIndex in
             
