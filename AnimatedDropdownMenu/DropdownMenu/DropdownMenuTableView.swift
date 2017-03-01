@@ -32,6 +32,7 @@ class DropdownMenuTableView: UITableView {
         dataSource = self
         separatorStyle = .none
         backgroundColor = .clear
+        autoresizingMask = .flexibleWidth
         isScrollEnabled = false
     }
 }
