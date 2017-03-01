@@ -26,6 +26,7 @@ class DropdownMenuTableViewCell: UITableViewCell {
         textLabel?.font = dropdownMenuConfig.cellTextLabelFont
         textLabel!.textAlignment = dropdownMenuConfig.cellTextLabelAlignment
         
+        iconImageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 16.0, height: 16.0))
         iconImageView.image = dropdownMenuConfig.cellIconImage
         iconImageView.contentMode = .scaleAspectFill
         contentView.addSubview(iconImageView)
