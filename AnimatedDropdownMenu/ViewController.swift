@@ -37,7 +37,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         
         super.viewDidLoad()
-//        configNavigationBar()
         setupAnimatedDropdownMenu()
     }
     
@@ -76,24 +75,6 @@ class ViewController: UIViewController {
     
     private func selectedAction() {
         print("\(dropdownItems[selectedStageIndex].title)")
-    }
-    
-    private func configNavigationBar() {
-        navigationController?.navigationBar.backgroundColor = nil
-        navigationController?.navigationBar.isTranslucent = true
-        navigationController?.navigationBar.shadowImage = nil
-        navigationController?.navigationBar.barStyle = .black
-        navigationController?.navigationBar.setBackgroundImage(nil, for: .default)
-        
-        let textAttributes: [String: Any] = [
-            NSForegroundColorAttributeName: UIColor.menuLightTextColor(),
-            NSFontAttributeName: UIFont.navigationBarTitleFont()
-        ]
-        
-        navigationController?.navigationBar.titleTextAttributes = textAttributes
-        navigationController?.navigationBar.tintColor = nil
-        
-        navigationController?.navigationBar.barTintColor = UIColor.menuDarkGrayColor()
     }
     
 }
