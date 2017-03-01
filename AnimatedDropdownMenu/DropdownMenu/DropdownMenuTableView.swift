@@ -18,7 +18,7 @@ class DropdownMenuTableView: UITableView {
     
     public var selectRowAtIndexPathHandler: ((_ indexPath: Int) -> ())?
     
-    fileprivate var selectedIndexPath: Int?
+    fileprivate var selectedIndex: Int?
     fileprivate var items: [Item] = []
     fileprivate var dropdownMenuConfig: DropdownMenuConfig!
     fileprivate let kDropdownMenuTableViewCell = "DropdownMenuTableViewCell"
@@ -27,11 +27,11 @@ class DropdownMenuTableView: UITableView {
         fatalError("init(coder:) has not been implemented")
     }
     
-    init(frame: CGRect, items: [Item], selectedIndexPath: Int, config: DropdownMenuConfig) {
+    init(frame: CGRect, items: [Item], selectedIndex: Int, config: DropdownMenuConfig) {
         super.init(frame: frame, style: .plain)
         
         self.items = items
-        self.selectedIndexPath = selectedIndexPath
+        self.selectedIndex = selectedIndex
         self.dropdownMenuConfig = config
         
         delegate = self
@@ -68,7 +68,7 @@ extension DropdownMenuTableView: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        selectedIndexPath = indexPath.row
+        selectedIndex = indexPath.row
         selectRowAtIndexPathHandler!(indexPath.row)
         reloadData()
         
@@ -92,9 +92,9 @@ extension DropdownMenuTableView: UITableViewDelegate {
         
         let tableCell = cell as! DropdownMenuTableViewCell
         
-        tableCell.textLabel?.textColor = (indexPath.row == selectedIndexPath) ?
+        tableCell.textLabel?.textColor = (indexPath.row == selectedIndex) ?
             dropdownMenuConfig.cellTextLabelSelectedColor :
             dropdownMenuConfig.cellTextLabelColor
-        tableCell.iconImageView?.image = (indexPath.row == selectedIndexPath) ? items[indexPath.row].iconLight : items[indexPath.row].icon
+        tableCell.iconImageView?.image = (indexPath.row == selectedIndex) ? items[indexPath.row].iconLight : items[indexPath.row].icon
     }
 }
