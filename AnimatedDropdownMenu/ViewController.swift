@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupAnimatedDropdownMenu()
         
-        view.backgroundColor = UIColor.menuBackgroundColor()
+        view.backgroundColor = UIColor.menuRedBackgroundColor()//menuBackgroundColor()
     }
     
     // MARK: - Private Methods

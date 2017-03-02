@@ -14,6 +14,10 @@ extension UIColor {
         return UIColor(red: 57/255.0, green: 67/255.0, blue: 79/255.0, alpha: 1.0)
     }
     
+    class func menuRedBackgroundColor() -> UIColor {
+        return UIColor(red: 98/255.0, green: 116/255.0, blue: 140/255.0, alpha: 1.0)
+    }
+    
     class func menuLightGrayColor() -> UIColor {
         return UIColor(red: 95/255.0, green: 105/255.0, blue: 117/255.0, alpha: 1.0)
     }
@@ -33,4 +37,5 @@ extension UIColor {
     class func menuDarkRedColor() -> UIColor {
         return UIColor(red: 160/255.0, green: 61/255.0, blue: 73/255.0, alpha: 1.0)
     }
+    
 }
