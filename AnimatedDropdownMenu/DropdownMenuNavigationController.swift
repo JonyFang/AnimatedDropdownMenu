@@ -31,6 +31,6 @@ class DropdownMenuNavigationController: UINavigationController {
         navigationBar.titleTextAttributes = textAttributes
         navigationBar.tintColor = nil
         
-        navigationBar.barTintColor = UIColor.menuDarkGrayColor()
+        navigationBar.barTintColor = UIColor.menuLightTextColor()
     }
 }
