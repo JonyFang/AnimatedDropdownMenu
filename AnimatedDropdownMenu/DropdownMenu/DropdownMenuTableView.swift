@@ -84,5 +84,16 @@ extension DropdownMenuTableView: UITableViewDelegate {
             dropdownMenuConfig.cellTextLabelSelectedColor :
             dropdownMenuConfig.cellTextLabelColor
         tableCell.iconImageView?.image = (indexPath.row == selectedIndex) ? items[indexPath.row].iconLight : items[indexPath.row].icon
+        
+        guard (dropdownMenuConfig.cellSeparatorColor != nil) else {
+            return
+        }
+        
+        if indexPath.row == items.count - 1 {
+            tableCell.cellSeparator.separatorColor = .clear
+        }
+        else {
+            tableCell.cellSeparator.separatorColor = dropdownMenuConfig.cellSeparatorColor!
+        }
     }
 }

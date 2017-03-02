@@ -218,8 +218,8 @@ class AnimatedDropdownMenu: UIView {
         
         menuTitleColor = navigationController?.navigationBar.titleTextAttributes?[NSForegroundColorAttributeName] as? UIColor
         cellBackgroundColor = navigationController?.navigationBar.barTintColor
-        cellSeparatorColor = menuTitleColor
         cellTextColor = menuTitleColor
+        cellSeparatorColor = .clear
         
         menuArrowTintColor = menuTitleColor
     }

@@ -55,7 +55,8 @@ class ViewController: UIViewController {
 //        dropdownMenu.cellTextSelectedColor = UIColor.menuLightTextColor()
         
         dropdownMenu.cellBackgroundColor = UIColor.menuLightRedColor()
-        dropdownMenu.cellSelectedColor = UIColor.menuDarkRedColor()
+        dropdownMenu.cellSelectedColor = UIColor.menuLightRedColor()
+        dropdownMenu.cellSeparatorColor = UIColor.menuDarkRedColor()
         dropdownMenu.menuTitleColor = UIColor.menuLightTextColor()
         dropdownMenu.menuArrowTintColor = UIColor.menuLightTextColor()
         dropdownMenu.cellTextColor = UIColor.menuLightTextColor()

@@ -11,6 +11,7 @@ import UIKit
 class DropdownMenuTableViewCell: UITableViewCell {
     
     var iconImageView: UIImageView!
+    var cellSeparator: DropdownMenuCellSeparator!
     var cellContentFrame: CGRect!
     var dropdownMenuConfig: DropdownMenuConfig!
     
@@ -40,7 +41,12 @@ class DropdownMenuTableViewCell: UITableViewCell {
             break
         }
         
-        //TODO: Add separator for cell
+        //Add Separator for Cell
+        cellSeparator = DropdownMenuCellSeparator(frame: CGRect(x: 0, y: cellContentFrame.height, width: cellContentFrame.width, height: 1))
+        if let cellSeparatorColor = dropdownMenuConfig.cellSeparatorColor {
+            cellSeparator.separatorColor = cellSeparatorColor
+        }
+        contentView.addSubview(cellSeparator)
     }
     
     required init?(coder aDecoder: NSCoder) {

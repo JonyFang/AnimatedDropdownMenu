@@ -21,6 +21,7 @@
 		D3906A441E66E4DB0037FEC5 /* UIColor+DropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A431E66E4DB0037FEC5 /* UIColor+DropdownMenu.swift */; };
 		D3906A461E66ECD20037FEC5 /* UIFont+DropdownMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A451E66ECD20037FEC5 /* UIFont+DropdownMenu.swift */; };
 		D3906A491E66EE600037FEC5 /* DropdownMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A481E66EE600037FEC5 /* DropdownMenuNavigationController.swift */; };
+		D3906A4B1E67CD5D0037FEC5 /* DropdownMenuCellSeparator.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A4A1E67CD5C0037FEC5 /* DropdownMenuCellSeparator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		D3906A431E66E4DB0037FEC5 /* UIColor+DropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+DropdownMenu.swift"; sourceTree = "<group>"; };
 		D3906A451E66ECD20037FEC5 /* UIFont+DropdownMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+DropdownMenu.swift"; sourceTree = "<group>"; };
 		D3906A481E66EE600037FEC5 /* DropdownMenuNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropdownMenuNavigationController.swift; sourceTree = "<group>"; };
+		D3906A4A1E67CD5C0037FEC5 /* DropdownMenuCellSeparator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DropdownMenuCellSeparator.swift; path = AnimatedDropdownMenu/DropdownMenu/DropdownMenuCellSeparator.swift; sourceTree = SOURCE_ROOT; };
 		FFCE15753C06298EBFA4C0F7 /* Pods_AnimatedDropdownMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimatedDropdownMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -114,6 +116,7 @@
 				D3906A3C1E64F5F30037FEC5 /* DropdownMenuConfig.swift */,
 				D3906A381E641AA10037FEC5 /* DropdownMenuTableView.swift */,
 				D3906A401E650E510037FEC5 /* DropdownMenuTableViewCell.swift */,
+				D3906A4A1E67CD5C0037FEC5 /* DropdownMenuCellSeparator.swift */,
 				D3906A3E1E64FE300037FEC5 /* AnimatedDropdownMenu.bundle */,
 			);
 			name = DropdownMenu;
@@ -265,6 +268,7 @@
 				D3906A371E6419E00037FEC5 /* AnimatedDropdownMenu.swift in Sources */,
 				D361E8EF1E5EC31300182DED /* ViewController.swift in Sources */,
 				D3906A3D1E64F5F30037FEC5 /* DropdownMenuConfig.swift in Sources */,
+				D3906A4B1E67CD5D0037FEC5 /* DropdownMenuCellSeparator.swift in Sources */,
 				D3906A411E650E510037FEC5 /* DropdownMenuTableViewCell.swift in Sources */,
 				D3906A441E66E4DB0037FEC5 /* UIColor+DropdownMenu.swift in Sources */,
 				D3906A391E641AA10037FEC5 /* DropdownMenuTableView.swift in Sources */,

@@ -51,7 +51,7 @@ class DropdownMenuConfig {
         cellHeight = 50.0
         cellBackgroundColor = UIColor.white
         cellSelectedColor = UIColor.darkGray
-        cellSeparatorColor = UIColor.darkGray
+        cellSeparatorColor = UIColor.init(white: 1.0, alpha: 0.3)
         cellTextLabelColor = UIColor.darkGray
         cellTextLabelFont = UIFont.systemFont(ofSize: 15.0)
         cellTextLabelAlignment = .left
