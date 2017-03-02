@@ -15,12 +15,12 @@ class DropdownMenuConfig {
     
     var cellHeight: CGFloat!
     var cellBackgroundColor: UIColor?
+    var cellSelectedColor: UIColor?
     var cellSeparatorColor: UIColor?
     var cellTextLabelColor: UIColor?
     var cellTextLabelFont: UIFont!
     var cellTextLabelAlignment: NSTextAlignment!
     var cellTextLabelSelectedColor: UIColor?
-    var cellSelectionColor: UIColor?
     var cellIconImage: UIImage!
     
     var arrowTintColor: UIColor?
@@ -50,12 +50,12 @@ class DropdownMenuConfig {
             
         cellHeight = 50.0
         cellBackgroundColor = UIColor.white
+        cellSelectedColor = UIColor.darkGray
         cellSeparatorColor = UIColor.darkGray
         cellTextLabelColor = UIColor.darkGray
         cellTextLabelFont = UIFont.systemFont(ofSize: 15.0)
         cellTextLabelAlignment = .left
         cellTextLabelSelectedColor = UIColor.white
-        cellSelectionColor = UIColor.darkGray
         
         arrowTintColor = UIColor.white
         arrowPadding = 10.0

@@ -46,6 +46,15 @@ class AnimatedDropdownMenu: UIView {
         }
     }
     
+    public var cellSelectedColor: UIColor! {
+        get{
+            return dropdownConfig.cellSelectedColor
+        }
+        set(value) {
+            dropdownConfig.cellSelectedColor = value
+        }
+    }
+    
     public var cellSeparatorColor: UIColor! {
         get {
             return dropdownConfig.cellSeparatorColor

@@ -48,10 +48,17 @@ class ViewController: UIViewController {
         
         let dropdownMenu = AnimatedDropdownMenu(navigationController: navigationController, containerView: view, selectedIndex: selectedStageIndex, items: dropdownItems)
         
-        dropdownMenu.cellBackgroundColor = UIColor.menuBackgroundColor()
+//        dropdownMenu.cellBackgroundColor = UIColor.menuBackgroundColor()
+//        dropdownMenu.menuTitleColor = UIColor.menuLightTextColor()
+//        dropdownMenu.menuArrowTintColor = UIColor.menuLightTextColor()
+//        dropdownMenu.cellTextColor = UIColor.menuLightGrayColor()
+//        dropdownMenu.cellTextSelectedColor = UIColor.menuLightTextColor()
+        
+        dropdownMenu.cellBackgroundColor = UIColor.menuLightRedColor()
+        dropdownMenu.cellSelectedColor = UIColor.menuDarkRedColor()
         dropdownMenu.menuTitleColor = UIColor.menuLightTextColor()
         dropdownMenu.menuArrowTintColor = UIColor.menuLightTextColor()
-        dropdownMenu.cellTextColor = UIColor.menuLightGrayColor()
+        dropdownMenu.cellTextColor = UIColor.menuLightTextColor()
         dropdownMenu.cellTextSelectedColor = UIColor.menuLightTextColor()
         
         dropdownMenu.didSelectItemAtIndexHandler = {

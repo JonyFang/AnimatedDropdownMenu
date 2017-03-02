@@ -77,6 +77,9 @@ extension DropdownMenuTableView: UITableViewDelegate {
         
         let tableCell = cell as! DropdownMenuTableViewCell
         
+        cell.contentView.backgroundColor = (indexPath.row == selectedIndex) ?
+            dropdownMenuConfig.cellSelectedColor :
+            dropdownMenuConfig.cellBackgroundColor
         tableCell.textLabel?.textColor = (indexPath.row == selectedIndex) ?
             dropdownMenuConfig.cellTextLabelSelectedColor :
             dropdownMenuConfig.cellTextLabelColor
