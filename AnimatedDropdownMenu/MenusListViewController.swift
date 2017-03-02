@@ -72,6 +72,8 @@ extension MenusListViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //
+        
+        let vc = ViewController()
+        navigationController?.pushViewController(vc, animated: true)
     }
 }

@@ -42,6 +42,12 @@ class ViewController: UIViewController {
         view.backgroundColor = UIColor.menuRedBackgroundColor()//menuBackgroundColor()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        resetNavigationBarColor()
+    }
+    
     // MARK: - Private Methods
     
     fileprivate func setupAnimatedDropdownMenu() {
@@ -85,6 +91,19 @@ class ViewController: UIViewController {
     
     private func selectedAction() {
         print("\(dropdownItems[selectedStageIndex].title)")
+    }
+    
+    fileprivate func resetNavigationBarColor() {
+        
+        navigationController?.navigationBar.barStyle = .black
+        navigationController?.navigationBar.barTintColor = UIColor.menuDarkGrayColor()
+        
+        let textAttributes: [String: Any] = [
+            NSForegroundColorAttributeName: UIColor.menuLightTextColor(),
+            NSFontAttributeName: UIFont.navigationBarTitleFont()
+        ]
+        
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
     }
     
 }
