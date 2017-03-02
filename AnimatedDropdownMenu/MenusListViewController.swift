@@ -18,7 +18,7 @@ class MenusListViewController: UIViewController {
         super.viewDidLoad()
         setupTableView()
         
-        self.title = "Love U"
+        title = "DropdownMenus"
     }
     
     override func viewWillAppear(_ animated: Bool) {
