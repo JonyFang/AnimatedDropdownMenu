@@ -32,6 +32,7 @@
 		D3906A5D1E690A100037FEC5 /* LeftTypeFiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A5C1E690A100037FEC5 /* LeftTypeFiveViewController.swift */; };
 		D3906A5F1E690AF10037FEC5 /* LeftTypeSixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A5E1E690AF10037FEC5 /* LeftTypeSixViewController.swift */; };
 		D3906A611E690EC20037FEC5 /* CenterTypeOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A601E690EC20037FEC5 /* CenterTypeOneViewController.swift */; };
+		D3906A631E6910130037FEC5 /* CenterTypeTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A621E6910130037FEC5 /* CenterTypeTwoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -63,6 +64,7 @@
 		D3906A5C1E690A100037FEC5 /* LeftTypeFiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftTypeFiveViewController.swift; sourceTree = "<group>"; };
 		D3906A5E1E690AF10037FEC5 /* LeftTypeSixViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftTypeSixViewController.swift; sourceTree = "<group>"; };
 		D3906A601E690EC20037FEC5 /* CenterTypeOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterTypeOneViewController.swift; sourceTree = "<group>"; };
+		D3906A621E6910130037FEC5 /* CenterTypeTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterTypeTwoViewController.swift; sourceTree = "<group>"; };
 		FFCE15753C06298EBFA4C0F7 /* Pods_AnimatedDropdownMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimatedDropdownMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -182,6 +184,7 @@
 				D3906A5C1E690A100037FEC5 /* LeftTypeFiveViewController.swift */,
 				D3906A5E1E690AF10037FEC5 /* LeftTypeSixViewController.swift */,
 				D3906A601E690EC20037FEC5 /* CenterTypeOneViewController.swift */,
+				D3906A621E6910130037FEC5 /* CenterTypeTwoViewController.swift */,
 			);
 			name = MenuType;
 			sourceTree = "<group>";
@@ -312,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3906A631E6910130037FEC5 /* CenterTypeTwoViewController.swift in Sources */,
 				D3906A371E6419E00037FEC5 /* AnimatedDropdownMenu.swift in Sources */,
 				D361E8EF1E5EC31300182DED /* ViewController.swift in Sources */,
 				D3906A501E6835930037FEC5 /* MenusListTableViewCell.swift in Sources */,
