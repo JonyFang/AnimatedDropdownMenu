@@ -12,8 +12,8 @@ class AnimatedDropdownMenu: UIView {
     
     public struct Item {
         public let title: String
-        public let icon: UIImage
-        public let iconLight: UIImage
+        public let icon: UIImage?
+        public let iconLight: UIImage?
     }
     
     public var didSelectItemAtIndexHandler: ((_ indexPath: Int) -> ())?
@@ -79,6 +79,15 @@ class AnimatedDropdownMenu: UIView {
         }
         set(value) {
             dropdownConfig.cellTextLabelSelectedColor = value
+        }
+    }
+    
+    public var cellTextAlignment: NSTextAlignment! {
+        get {
+            return dropdownConfig.cellTextLabelAlignment
+        }
+        set(value) {
+            dropdownConfig.cellTextLabelAlignment = value
         }
     }
     

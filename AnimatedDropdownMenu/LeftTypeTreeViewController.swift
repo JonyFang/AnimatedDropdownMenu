@@ -1,14 +1,14 @@
 //
-//  ViewController.swift
+//  LeftTypeTreeViewController.swift
 //  AnimatedDropdownMenu
 //
-//  Created by JonyFang on 17/2/23.
+//  Created by JonyFang on 17/3/3.
 //  Copyright © 2017年 JonyFang. All rights reserved.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class LeftTypeTreeViewController: UIViewController {
     
     // MARK: - Properties
     fileprivate let dropdownItems: [AnimatedDropdownMenu.Item] = [
@@ -31,6 +31,7 @@ class ViewController: UIViewController {
     
     fileprivate var selectedStageIndex: Int = 0
     fileprivate var lastStageIndex: Int = 0
+    fileprivate var dropdownMenu: AnimatedDropdownMenu!
     
     // MARK: - Life Cycle
     
@@ -39,7 +40,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         setupAnimatedDropdownMenu()
         
-        view.backgroundColor = UIColor.menuRedBackgroundColor()//menuBackgroundColor()
+        view.backgroundColor = .white
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -48,25 +49,24 @@ class ViewController: UIViewController {
         resetNavigationBarColor()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        
+        super.viewDidAppear(animated)
+        dropdownMenu.show()
+    }
+    
     // MARK: - Private Methods
     
     fileprivate func setupAnimatedDropdownMenu() {
         
         let dropdownMenu = AnimatedDropdownMenu(navigationController: navigationController, containerView: view, selectedIndex: selectedStageIndex, items: dropdownItems)
         
-//        dropdownMenu.cellBackgroundColor = UIColor.menuBackgroundColor()
-//        dropdownMenu.menuTitleColor = UIColor.menuLightTextColor()
-//        dropdownMenu.menuArrowTintColor = UIColor.menuLightTextColor()
-//        dropdownMenu.cellTextColor = UIColor.menuLightGrayColor()
-//        dropdownMenu.cellTextSelectedColor = UIColor.menuLightTextColor()
-        
         dropdownMenu.cellBackgroundColor = UIColor.menuLightRedColor()
-        dropdownMenu.cellSelectedColor = UIColor.menuLightRedColor()
-        dropdownMenu.cellSeparatorColor = UIColor.menuDarkRedColor()
         dropdownMenu.menuTitleColor = UIColor.menuLightTextColor()
         dropdownMenu.menuArrowTintColor = UIColor.menuLightTextColor()
-        dropdownMenu.cellTextColor = UIColor.menuLightTextColor()
+        dropdownMenu.cellTextColor = UIColor.init(white: 1.0, alpha: 0.3)
         dropdownMenu.cellTextSelectedColor = UIColor.menuLightTextColor()
+        dropdownMenu.cellSeparatorColor = UIColor.init(white: 1.0, alpha: 0.1)
         
         dropdownMenu.didSelectItemAtIndexHandler = {
             [weak self] selectedIndex in
@@ -86,6 +86,7 @@ class ViewController: UIViewController {
             strongSelf.selectedAction()
         }
         
+        self.dropdownMenu = dropdownMenu
         navigationItem.titleView = dropdownMenu
     }
     
@@ -96,7 +97,7 @@ class ViewController: UIViewController {
     fileprivate func resetNavigationBarColor() {
         
         navigationController?.navigationBar.barStyle = .black
-        navigationController?.navigationBar.barTintColor = UIColor.menuDarkGrayColor()
+        navigationController?.navigationBar.barTintColor = UIColor.menuLightRedColor()
         
         let textAttributes: [String: Any] = [
             NSForegroundColorAttributeName: UIColor.menuLightTextColor(),
@@ -107,4 +108,3 @@ class ViewController: UIViewController {
     }
     
 }
-

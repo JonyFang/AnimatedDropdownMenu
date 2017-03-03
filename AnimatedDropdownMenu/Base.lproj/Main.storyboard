@@ -4,14 +4,15 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Menus List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="AnimatedDropdownMenu" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="MenusListViewController" customModule="AnimatedDropdownMenu" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -19,9 +20,30 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="oD5-60-VNA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="GID-4C-cDx"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="G2o-um-tLn"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="oD5-60-VNA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="DbV-QA-hvb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="oD5-60-VNA" secondAttribute="bottom" id="It9-Xd-QmE"/>
+                            <constraint firstAttribute="trailing" secondItem="oD5-60-VNA" secondAttribute="trailing" id="ZMm-Ex-GSc"/>
+                            <constraint firstItem="oD5-60-VNA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pjs-jA-EU5"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="FVZ-Em-M6b"/>
+                    <navigationItem key="navigationItem" id="FVZ-Em-M6b">
+                        <barButtonItem key="backBarButtonItem" title=" " id="vfS-ZE-QAc"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="oD5-60-VNA" id="hT3-wE-bzo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
