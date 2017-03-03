@@ -73,7 +73,9 @@ extension MenusListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let vc = ViewController()
-        navigationController?.pushViewController(vc, animated: true)
+        if indexPath.row == 0 {
+            let vc = LeftTypeOneViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }

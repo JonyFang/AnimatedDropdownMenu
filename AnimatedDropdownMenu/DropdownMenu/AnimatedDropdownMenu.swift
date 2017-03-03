@@ -12,8 +12,8 @@ class AnimatedDropdownMenu: UIView {
     
     public struct Item {
         public let title: String
-        public let icon: UIImage
-        public let iconLight: UIImage
+        public let icon: UIImage?
+        public let iconLight: UIImage?
     }
     
     public var didSelectItemAtIndexHandler: ((_ indexPath: Int) -> ())?

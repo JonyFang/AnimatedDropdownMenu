@@ -76,14 +76,24 @@ extension DropdownMenuTableView: UITableViewDelegate {
         }
         
         let tableCell = cell as! DropdownMenuTableViewCell
+        let icon: UIImage? = items[indexPath.row].icon
+        let iconLight: UIImage? = items[indexPath.row].iconLight
         
-        cell.contentView.backgroundColor = (indexPath.row == selectedIndex) ?
-            dropdownMenuConfig.cellSelectedColor :
-            dropdownMenuConfig.cellBackgroundColor
-        tableCell.textLabel?.textColor = (indexPath.row == selectedIndex) ?
-            dropdownMenuConfig.cellTextLabelSelectedColor :
-            dropdownMenuConfig.cellTextLabelColor
-        tableCell.iconImageView?.image = (indexPath.row == selectedIndex) ? items[indexPath.row].iconLight : items[indexPath.row].icon
+        if icon != nil && iconLight != nil {
+            tableCell.iconImageView?.image = (indexPath.row == selectedIndex) ? iconLight : icon
+        }
+        
+        if dropdownMenuConfig.cellSelectedColor != .clear {
+            cell.contentView.backgroundColor = (indexPath.row == selectedIndex) ?
+                dropdownMenuConfig.cellSelectedColor :
+                dropdownMenuConfig.cellBackgroundColor
+        }
+        
+        if dropdownMenuConfig.cellTextLabelSelectedColor != .clear {
+            tableCell.textLabel?.textColor = (indexPath.row == selectedIndex) ?
+                dropdownMenuConfig.cellTextLabelSelectedColor :
+                dropdownMenuConfig.cellTextLabelColor
+        }
         
         guard (dropdownMenuConfig.cellSeparatorColor != nil) else {
             return

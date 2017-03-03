@@ -25,6 +25,7 @@
 		D3906A4D1E6831CF0037FEC5 /* MenusListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A4C1E6831CF0037FEC5 /* MenusListViewController.swift */; };
 		D3906A501E6835930037FEC5 /* MenusListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A4E1E6835920037FEC5 /* MenusListTableViewCell.swift */; };
 		D3906A511E6835930037FEC5 /* MenusListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3906A4F1E6835920037FEC5 /* MenusListTableViewCell.xib */; };
+		D3906A551E68EE430037FEC5 /* LeftTypeOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A541E68EE430037FEC5 /* LeftTypeOneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +50,7 @@
 		D3906A4C1E6831CF0037FEC5 /* MenusListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenusListViewController.swift; sourceTree = "<group>"; };
 		D3906A4E1E6835920037FEC5 /* MenusListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenusListTableViewCell.swift; sourceTree = "<group>"; };
 		D3906A4F1E6835920037FEC5 /* MenusListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenusListTableViewCell.xib; sourceTree = "<group>"; };
+		D3906A541E68EE430037FEC5 /* LeftTypeOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftTypeOneViewController.swift; sourceTree = "<group>"; };
 		FFCE15753C06298EBFA4C0F7 /* Pods_AnimatedDropdownMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimatedDropdownMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -106,6 +108,7 @@
 				D361E8EC1E5EC31300182DED /* AppDelegate.swift */,
 				D361E8EE1E5EC31300182DED /* ViewController.swift */,
 				D3906A521E68ED820037FEC5 /* MenusList */,
+				D3906A531E68EDB30037FEC5 /* MenuType */,
 				D3906A471E66EE190037FEC5 /* Navigation */,
 				D3906A421E66E4B30037FEC5 /* Extensions */,
 				D361E8F01E5EC31300182DED /* Main.storyboard */,
@@ -155,6 +158,14 @@
 				D3906A4F1E6835920037FEC5 /* MenusListTableViewCell.xib */,
 			);
 			name = MenusList;
+			sourceTree = "<group>";
+		};
+		D3906A531E68EDB30037FEC5 /* MenuType */ = {
+			isa = PBXGroup;
+			children = (
+				D3906A541E68EE430037FEC5 /* LeftTypeOneViewController.swift */,
+			);
+			name = MenuType;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,6 +298,7 @@
 				D361E8EF1E5EC31300182DED /* ViewController.swift in Sources */,
 				D3906A501E6835930037FEC5 /* MenusListTableViewCell.swift in Sources */,
 				D3906A4D1E6831CF0037FEC5 /* MenusListViewController.swift in Sources */,
+				D3906A551E68EE430037FEC5 /* LeftTypeOneViewController.swift in Sources */,
 				D3906A3D1E64F5F30037FEC5 /* DropdownMenuConfig.swift in Sources */,
 				D3906A4B1E67CD5D0037FEC5 /* DropdownMenuCellSeparator.swift in Sources */,
 				D3906A411E650E510037FEC5 /* DropdownMenuTableViewCell.swift in Sources */,
