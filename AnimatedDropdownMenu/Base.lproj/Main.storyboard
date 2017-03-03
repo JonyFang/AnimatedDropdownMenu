@@ -38,7 +38,9 @@
                             <constraint firstItem="oD5-60-VNA" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="pjs-jA-EU5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="FVZ-Em-M6b"/>
+                    <navigationItem key="navigationItem" id="FVZ-Em-M6b">
+                        <barButtonItem key="backBarButtonItem" title=" " style="plain" id="vfS-ZE-QAc"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="oD5-60-VNA" id="hT3-wE-bzo"/>
                     </connections>
