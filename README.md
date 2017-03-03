@@ -10,16 +10,17 @@
     <a href="http://mit-license.org"><img src="https://img.shields.io/cocoapods/l/AnimatedDropdownMenu.svg?style=flat"></a>
 </p>
 
-AnimatedDropdownMenu is a clean interface dropdown menu, appears underneath navigation bar to display a list of related items when you click on the navigation title.
+**AnimatedDropdownMenu** is a clean interface dropdown menu, appears underneath navigation bar to display a list of related items when you click on the navigation title.
 
 ## Requirements
 
+- Xcode 8.0+
 - iOS 8.0+
 - Swift 3.0
 
 ## Example
 
-To run the example project, clone the repo, and start `iOS Example` in Xcode.
+To run the example project, clone the repo, and start `iOS-Example` in Xcode.
 
 ## Installation
 
@@ -44,8 +45,10 @@ import AnimatedDropdownMenu
 
 ## Author
 
-[@JonyFang](https://twitter.com/jony_chunfang)
+[Weibo: @JonyFang](http://weibo.com/3034766044/profile?topnav=1&wvr=6)
+[Twitter: @JonyFang](https://twitter.com/jony_chunfang)
+[Email: jony.chunfang@gmail.com](mailto:jony.chunfang@gmail.com)
 
 ## License
 
-AnimatedDropdownMenu is available under the MIT license. See the LICENSE file for more info.
+**AnimatedDropdownMenu** is available under the MIT license. See the LICENSE file for more info.
