@@ -60,6 +60,9 @@
                                         <integer key="value" value="11"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="previewButtonClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="817-Uk-sor"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MENU TYPE 01" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bwg-Ro-eDH">
                                 <rect key="frame" x="14" y="121" width="186" height="14"/>
@@ -105,6 +108,12 @@
                     <constraint firstAttribute="bottom" secondItem="zpX-yc-ce1" secondAttribute="bottom" id="z5E-pA-5bB"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="descriptionLabel" destination="SAP-Ng-f5g" id="S0O-jz-hGI"/>
+                <outlet property="menuTitleLabel" destination="4rr-WU-bXa" id="6sS-sj-2f7"/>
+                <outlet property="menuTypeView" destination="qEi-GC-hy4" id="C86-TM-CJE"/>
+                <outlet property="nameLabel" destination="Bwg-Ro-eDH" id="3Px-9t-axR"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

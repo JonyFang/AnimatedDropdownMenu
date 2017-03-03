@@ -55,12 +55,18 @@ extension MenusListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10 //TODO: cell count
+        return MenusListConfig.MenusListCells.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
+        let cellConfig = MenusListConfig.MenusListCells[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: MenusListTableViewCell.reuseIdentifier) as! MenusListTableViewCell
+        
+        cell.menuTitleLabel.text = cellConfig.menuTitle
+        cell.nameLabel.text = cellConfig.name
+        cell.descriptionLabel.text = cellConfig.description
+        
         return cell
     }
 }

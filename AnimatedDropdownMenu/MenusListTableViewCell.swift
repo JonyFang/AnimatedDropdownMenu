@@ -21,7 +21,14 @@ class MenusListTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
+    @IBOutlet weak var menuTypeView: UIView!
+    @IBOutlet weak var menuTitleLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+    
+    @IBAction func previewButtonClicked(_ sender: Any) {
+        //TODO: Delegate
+    }
 }
