@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		D145D3FD2BE30328A59C230F /* Pods_AnimatedDropdownMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFCE15753C06298EBFA4C0F7 /* Pods_AnimatedDropdownMenu.framework */; };
 		D361E8ED1E5EC31300182DED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D361E8EC1E5EC31300182DED /* AppDelegate.swift */; };
-		D361E8EF1E5EC31300182DED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D361E8EE1E5EC31300182DED /* ViewController.swift */; };
 		D361E8F21E5EC31300182DED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D361E8F01E5EC31300182DED /* Main.storyboard */; };
 		D361E8F41E5EC31300182DED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D361E8F31E5EC31300182DED /* Assets.xcassets */; };
 		D361E8F71E5EC31300182DED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D361E8F51E5EC31300182DED /* LaunchScreen.storyboard */; };
@@ -42,7 +41,6 @@
 		71FE0B0EE28B3FE8656363C7 /* Pods-AnimatedDropdownMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimatedDropdownMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimatedDropdownMenu/Pods-AnimatedDropdownMenu.release.xcconfig"; sourceTree = "<group>"; };
 		D361E8E91E5EC31300182DED /* AnimatedDropdownMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatedDropdownMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D361E8EC1E5EC31300182DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D361E8EE1E5EC31300182DED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D361E8F11E5EC31300182DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D361E8F31E5EC31300182DED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D361E8F61E5EC31300182DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -124,7 +122,6 @@
 			children = (
 				D361E8FE1E5ECB8600182DED /* DropdownMenu */,
 				D361E8EC1E5EC31300182DED /* AppDelegate.swift */,
-				D361E8EE1E5EC31300182DED /* ViewController.swift */,
 				D3906A521E68ED820037FEC5 /* MenusList */,
 				D3906A531E68EDB30037FEC5 /* MenuType */,
 				D3906A471E66EE190037FEC5 /* Navigation */,
@@ -323,7 +320,6 @@
 			files = (
 				D3906A631E6910130037FEC5 /* CenterTypeTwoViewController.swift in Sources */,
 				D3906A371E6419E00037FEC5 /* AnimatedDropdownMenu.swift in Sources */,
-				D361E8EF1E5EC31300182DED /* ViewController.swift in Sources */,
 				D3906A501E6835930037FEC5 /* MenusListTableViewCell.swift in Sources */,
 				D3906A671E6915280037FEC5 /* MenusListConfig.swift in Sources */,
 				D3906A4D1E6831CF0037FEC5 /* MenusListViewController.swift in Sources */,
