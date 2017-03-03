@@ -71,7 +71,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Icon &amp; TextColor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SAP-Ng-f5g">
-                                <rect key="frame" x="14" y="137" width="186" height="14"/>
+                                <rect key="frame" x="14" y="137" width="236" height="14"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="0.56470588235294117" green="0.56470588235294117" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -87,7 +87,7 @@
                             <constraint firstItem="qEi-GC-hy4" firstAttribute="top" secondItem="zpX-yc-ce1" secondAttribute="top" constant="12" id="Lfo-at-FY3"/>
                             <constraint firstItem="pkd-l6-1Pn" firstAttribute="top" secondItem="qEi-GC-hy4" secondAttribute="bottom" constant="18" id="YxB-ZM-z1m"/>
                             <constraint firstAttribute="trailing" secondItem="Bwg-Ro-eDH" secondAttribute="trailing" constant="120" id="gu8-xw-YLS"/>
-                            <constraint firstAttribute="trailing" secondItem="SAP-Ng-f5g" secondAttribute="trailing" constant="120" id="l2s-qL-z7K"/>
+                            <constraint firstAttribute="trailing" secondItem="SAP-Ng-f5g" secondAttribute="trailing" constant="70" id="l2s-qL-z7K"/>
                             <constraint firstItem="SAP-Ng-f5g" firstAttribute="top" secondItem="Bwg-Ro-eDH" secondAttribute="bottom" constant="2" id="mOn-qC-Lbc"/>
                             <constraint firstAttribute="bottom" secondItem="qEi-GC-hy4" secondAttribute="bottom" constant="56" id="oYy-s2-smV"/>
                             <constraint firstAttribute="trailing" secondItem="qEi-GC-hy4" secondAttribute="trailing" constant="14" id="zB3-c7-fhh"/>
