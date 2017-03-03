@@ -77,5 +77,9 @@ extension MenusListViewController: UITableViewDelegate {
             let vc = LeftTypeOneViewController()
             navigationController?.pushViewController(vc, animated: true)
         }
+        else if indexPath.row == 1 {
+            let vc = LeftTypeTwoViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }

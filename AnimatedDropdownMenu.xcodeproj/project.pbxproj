@@ -26,6 +26,7 @@
 		D3906A501E6835930037FEC5 /* MenusListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A4E1E6835920037FEC5 /* MenusListTableViewCell.swift */; };
 		D3906A511E6835930037FEC5 /* MenusListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3906A4F1E6835920037FEC5 /* MenusListTableViewCell.xib */; };
 		D3906A551E68EE430037FEC5 /* LeftTypeOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A541E68EE430037FEC5 /* LeftTypeOneViewController.swift */; };
+		D3906A571E6905FB0037FEC5 /* LeftTypeTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A561E6905FB0037FEC5 /* LeftTypeTwoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		D3906A4E1E6835920037FEC5 /* MenusListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenusListTableViewCell.swift; sourceTree = "<group>"; };
 		D3906A4F1E6835920037FEC5 /* MenusListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenusListTableViewCell.xib; sourceTree = "<group>"; };
 		D3906A541E68EE430037FEC5 /* LeftTypeOneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftTypeOneViewController.swift; sourceTree = "<group>"; };
+		D3906A561E6905FB0037FEC5 /* LeftTypeTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftTypeTwoViewController.swift; sourceTree = "<group>"; };
 		FFCE15753C06298EBFA4C0F7 /* Pods_AnimatedDropdownMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimatedDropdownMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				D3906A541E68EE430037FEC5 /* LeftTypeOneViewController.swift */,
+				D3906A561E6905FB0037FEC5 /* LeftTypeTwoViewController.swift */,
 			);
 			name = MenuType;
 			sourceTree = "<group>";
@@ -304,6 +307,7 @@
 				D3906A411E650E510037FEC5 /* DropdownMenuTableViewCell.swift in Sources */,
 				D3906A441E66E4DB0037FEC5 /* UIColor+DropdownMenu.swift in Sources */,
 				D3906A391E641AA10037FEC5 /* DropdownMenuTableView.swift in Sources */,
+				D3906A571E6905FB0037FEC5 /* LeftTypeTwoViewController.swift in Sources */,
 				D3906A491E66EE600037FEC5 /* DropdownMenuNavigationController.swift in Sources */,
 				D3906A461E66ECD20037FEC5 /* UIFont+DropdownMenu.swift in Sources */,
 				D361E8ED1E5EC31300182DED /* AppDelegate.swift in Sources */,
