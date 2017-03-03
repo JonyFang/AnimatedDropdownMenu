@@ -38,12 +38,6 @@ extension UIColor {
         return UIColor(red: 160/255.0, green: 61/255.0, blue: 73/255.0, alpha: 1.0)
     }
     
-    //purple 143, 69, 163
-    //gree 0, 162, 138
-    //lightblue 113, 195, 255
-    //yellow 243, 194, 46
-    //skyblue 102, 165, 226
-    
     class func menuPurpleColor() -> UIColor {
         return UIColor(red: 143/255.0, green: 69/255.0, blue: 163/255.0, alpha: 1.0)
     }
