@@ -73,41 +73,36 @@ extension MenusListViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
+        var vc = UIViewController()
+        
         if indexPath.row == 0 {
-            let vc = LeftTypeOneViewController()
-            navigationController?.pushViewController(vc, animated: true)
+            vc = LeftTypeOneViewController()
         }
         else if indexPath.row == 1 {
-            let vc = LeftTypeTwoViewController()
-            navigationController?.pushViewController(vc, animated: true)
+            vc = LeftTypeTwoViewController()
         }
         else if indexPath.row == 2 {
-            let vc = LeftTypeTreeViewController()
-            navigationController?.pushViewController(vc, animated: true)
+            vc = LeftTypeTreeViewController()
         }
         else if indexPath.row == 3 {
-            let vc = LeftTypeFourViewController()
-            navigationController?.pushViewController(vc, animated: true)
+            vc = LeftTypeFourViewController()
         }
         else if indexPath.row == 4 {
-            let vc = LeftTypeFiveViewController()
-            navigationController?.pushViewController(vc, animated: true)
+            vc = LeftTypeFiveViewController()
         }
         else if indexPath.row == 5 {
-            let vc = LeftTypeSixViewController()
-            navigationController?.pushViewController(vc, animated: true)
+            vc = LeftTypeSixViewController()
         }
         else if indexPath.row == 6 {
-            let vc = CenterTypeOneViewController()
-            navigationController?.pushViewController(vc, animated: true)
+            vc = CenterTypeOneViewController()
         }
         else if indexPath.row == 7 {
-            let vc = CenterTypeTwoViewController()
-            navigationController?.pushViewController(vc, animated: true)
+            vc = CenterTypeTwoViewController()
         }
         else if indexPath.row == 8 {
-            let vc = CenterTypeThreeViewController()
-            navigationController?.pushViewController(vc, animated: true)
+            vc = CenterTypeThreeViewController()
         }
+        
+        navigationController?.pushViewController(vc, animated: true)
     }
 }
