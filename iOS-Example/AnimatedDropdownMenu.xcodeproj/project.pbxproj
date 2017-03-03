@@ -33,9 +33,11 @@
 		D3906A631E6910130037FEC5 /* CenterTypeTwoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A621E6910130037FEC5 /* CenterTypeTwoViewController.swift */; };
 		D3906A651E69111F0037FEC5 /* CenterTypeThreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A641E69111E0037FEC5 /* CenterTypeThreeViewController.swift */; };
 		D3906A671E6915280037FEC5 /* MenusListConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A661E6915280037FEC5 /* MenusListConfig.swift */; };
+		F62B5ECFE06494F0AA204756 /* Pods_AnimatedDropdownMenu.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6774F901EA7CD91F0EE100D9 /* Pods_AnimatedDropdownMenu.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6774F901EA7CD91F0EE100D9 /* Pods_AnimatedDropdownMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimatedDropdownMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D361E8E91E5EC31300182DED /* AnimatedDropdownMenu.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatedDropdownMenu.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D361E8EC1E5EC31300182DED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D361E8F11E5EC31300182DED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -64,6 +66,8 @@
 		D3906A621E6910130037FEC5 /* CenterTypeTwoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterTypeTwoViewController.swift; sourceTree = "<group>"; };
 		D3906A641E69111E0037FEC5 /* CenterTypeThreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CenterTypeThreeViewController.swift; sourceTree = "<group>"; };
 		D3906A661E6915280037FEC5 /* MenusListConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenusListConfig.swift; sourceTree = "<group>"; };
+		D724D15110217BCA5ABC3E03 /* Pods-AnimatedDropdownMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimatedDropdownMenu.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimatedDropdownMenu/Pods-AnimatedDropdownMenu.debug.xcconfig"; sourceTree = "<group>"; };
+		DCD32A986F866FF26219E4A6 /* Pods-AnimatedDropdownMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimatedDropdownMenu.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimatedDropdownMenu/Pods-AnimatedDropdownMenu.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,17 +75,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F62B5ECFE06494F0AA204756 /* Pods_AnimatedDropdownMenu.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A88F783F5B5DBA6C60665EFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6774F901EA7CD91F0EE100D9 /* Pods_AnimatedDropdownMenu.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AE14A9C2F839D54AE6322049 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D724D15110217BCA5ABC3E03 /* Pods-AnimatedDropdownMenu.debug.xcconfig */,
+				DCD32A986F866FF26219E4A6 /* Pods-AnimatedDropdownMenu.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D361E8E01E5EC31300182DED = {
 			isa = PBXGroup;
 			children = (
 				D361E8EB1E5EC31300182DED /* AnimatedDropdownMenu */,
 				D361E8EA1E5EC31300182DED /* Products */,
+				AE14A9C2F839D54AE6322049 /* Pods */,
+				A88F783F5B5DBA6C60665EFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -175,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D361E8FB1E5EC31300182DED /* Build configuration list for PBXNativeTarget "AnimatedDropdownMenu" */;
 			buildPhases = (
+				358A7D619AD4FF5ED586085B /* [CP] Check Pods Manifest.lock */,
 				D361E8E51E5EC31300182DED /* Sources */,
 				D361E8E61E5EC31300182DED /* Frameworks */,
 				D361E8E71E5EC31300182DED /* Resources */,
+				7232F3AC6CB3E3D75800B30E /* [CP] Embed Pods Frameworks */,
+				95CA8A46D1227D638A5981BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -237,6 +264,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		358A7D619AD4FF5ED586085B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7232F3AC6CB3E3D75800B30E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimatedDropdownMenu/Pods-AnimatedDropdownMenu-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		95CA8A46D1227D638A5981BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AnimatedDropdownMenu/Pods-AnimatedDropdownMenu-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D361E8E51E5EC31300182DED /* Sources */ = {
@@ -382,6 +457,7 @@
 		};
 		D361E8FC1E5EC31300182DED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D724D15110217BCA5ABC3E03 /* Pods-AnimatedDropdownMenu.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 26SQZQ89WS;
@@ -395,6 +471,7 @@
 		};
 		D361E8FD1E5EC31300182DED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCD32A986F866FF26219E4A6 /* Pods-AnimatedDropdownMenu.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 26SQZQ89WS;
