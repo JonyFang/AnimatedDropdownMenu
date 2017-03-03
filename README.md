@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="" alt="AnimatedDropdownMenu" title="AnimatedDropdownMenu" width="557">
+    <img src="https://dn-ynvsu4wa.qbox.me/16f7940346e6cfc5ddf9.png" alt="AnimatedDropdownMenu" title="AnimatedDropdownMenu" width="1000">
 </p>
 <p align="center">
     <a href=""><img src="https://api.travis-ci.org/JonyFang/AnimatedDropdownMenu.svg?branch=master"></a>
