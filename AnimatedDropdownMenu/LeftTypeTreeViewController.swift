@@ -64,7 +64,7 @@ class LeftTypeTreeViewController: UIViewController {
         dropdownMenu.cellBackgroundColor = UIColor.menuLightRedColor()
         dropdownMenu.menuTitleColor = UIColor.menuLightTextColor()
         dropdownMenu.menuArrowTintColor = UIColor.menuLightTextColor()
-        dropdownMenu.cellTextColor = UIColor.init(white: 1.0, alpha: 0.5)
+        dropdownMenu.cellTextColor = UIColor.init(white: 1.0, alpha: 0.3)
         dropdownMenu.cellTextSelectedColor = UIColor.menuLightTextColor()
         dropdownMenu.cellSeparatorColor = UIColor.init(white: 1.0, alpha: 0.1)
         
