@@ -14,17 +14,17 @@ class LeftTypeOneViewController: UIViewController {
     fileprivate let dropdownItems: [AnimatedDropdownMenu.Item] = [
         AnimatedDropdownMenu.Item(
             title: "From | Photography",
-            icon: UIImage(named: "icon_unsplash_gray")!,
-            iconLight: UIImage(named: "icon_unsplash_light")!
+            icon: UIImage(named: "icon_photography")!,
+            iconLight: UIImage(named: "icon_photography_light")!
         ),
         AnimatedDropdownMenu.Item(
             title: "From | Artwork",
-            icon: UIImage(named: "icon_artand_gray")!,
-            iconLight: UIImage(named: "icon_artand_light")!
+            icon: UIImage(named: "icon_artwork")!,
+            iconLight: UIImage(named: "icon_artwork_light")!
         ),
         AnimatedDropdownMenu.Item(
             title: "Others",
-            icon: UIImage(named: "icon_other_gray")!,
+            icon: UIImage(named: "icon_other")!,
             iconLight: UIImage(named: "icon_other_light")!
         )
     ]
@@ -61,7 +61,7 @@ class LeftTypeOneViewController: UIViewController {
         
         let dropdownMenu = AnimatedDropdownMenu(navigationController: navigationController, containerView: view, selectedIndex: selectedStageIndex, items: dropdownItems)
         
-        dropdownMenu.cellBackgroundColor = UIColor.menuLightRedColor()
+        dropdownMenu.cellBackgroundColor = UIColor.menuGreeColor()
         dropdownMenu.menuTitleColor = UIColor.menuLightTextColor()
         dropdownMenu.menuArrowTintColor = UIColor.menuLightTextColor()
         dropdownMenu.cellTextColor = UIColor.init(white: 1.0, alpha: 0.3)
@@ -96,7 +96,7 @@ class LeftTypeOneViewController: UIViewController {
     fileprivate func resetNavigationBarColor() {
         
         navigationController?.navigationBar.barStyle = .black
-        navigationController?.navigationBar.barTintColor = UIColor.menuLightRedColor()
+        navigationController?.navigationBar.barTintColor = UIColor.menuGreeColor()
         
         let textAttributes: [String: Any] = [
             NSForegroundColorAttributeName: UIColor.menuLightTextColor(),

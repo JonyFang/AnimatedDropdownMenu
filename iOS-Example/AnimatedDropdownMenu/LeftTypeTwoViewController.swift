@@ -14,13 +14,13 @@ class LeftTypeTwoViewController: UIViewController {
     fileprivate let dropdownItems: [AnimatedDropdownMenu.Item] = [
         AnimatedDropdownMenu.Item(
             title: "From | Photography",
-            icon: UIImage(named: "icon_unsplash_light")!,
-            iconLight: UIImage(named: "icon_unsplash_light")!
+            icon: UIImage(named: "icon_photography_light")!,
+            iconLight: UIImage(named: "icon_photography_light")!
         ),
         AnimatedDropdownMenu.Item(
             title: "From | Artwork",
-            icon: UIImage(named: "icon_artand_light")!,
-            iconLight: UIImage(named: "icon_artand_light")!
+            icon: UIImage(named: "icon_artwork_light")!,
+            iconLight: UIImage(named: "icon_artwork_light")!
         ),
         AnimatedDropdownMenu.Item(
             title: "Others",

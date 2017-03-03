@@ -2,19 +2,25 @@
     <img src="https://dn-ynvsu4wa.qbox.me/16f7940346e6cfc5ddf9.png" alt="AnimatedDropdownMenu" title="AnimatedDropdownMenu" width="1000">
 </p>
 <p align="center">
-    <a href=""><img src="https://api.travis-ci.org/JonyFang/AnimatedDropdownMenu.svg?branch=master"></a>
+    <!-- <a href=""><img src="https://api.travis-ci.org/JonyFang/AnimatedDropdownMenu.svg?branch=master"></a> -->
+    <a href="https://cocoapods.org/pods/AnimatedDropdownMenu"><img src="https://img.shields.io/cocoapods/p/AnimatedDropdownMenu.svg?style=flat"></a>
+    <a href="https://cocoapods.org/pods/AnimatedDropdownMenu"><img src="https://img.shields.io/badge/iOS-8.0%2B-blue.svg"></a>
+    <a href="https://cocoapods.org/pods/AnimatedDropdownMenu"><img src="https://img.shields.io/badge/Swift-3.0%2B-orange.svg"></a>
+    <a href="https://cocoapods.org/pods/AnimatedDropdownMenu"><img src="https://img.shields.io/cocoapods/v/AnimatedDropdownMenu.svg?style=flat"></a>
+    <a href="http://mit-license.org"><img src="https://img.shields.io/cocoapods/l/AnimatedDropdownMenu.svg?style=flat"></a>
 </p>
 
-AnimatedDropdownMenu is a clean interface dropdown menu, appears underneath navigation bar to display a list of related items when you click on the navigation title.
+**AnimatedDropdownMenu** is a clean interface dropdown menu, appears underneath navigation bar to display a list of related items when you click on the navigation title.
 
 ## Requirements
 
+- Xcode 8.0+
 - iOS 8.0+
 - Swift 3.0
 
 ## Example
 
-To run the example project, clone the repo, and start `iOS Example` in Xcode.
+To run the example project, clone the repo, and start `iOS-Example` in Xcode.
 
 ## Installation
 
@@ -39,8 +45,10 @@ import AnimatedDropdownMenu
 
 ## Author
 
-[@JonyFang](https://twitter.com/jony_chunfang)
+- [Weibo: @JonyFang](http://weibo.com/3034766044/profile?topnav=1&wvr=6)
+- [Twitter: @JonyFang](https://twitter.com/jony_chunfang)
+- [Email: jony.chunfang@gmail.com](mailto:jony.chunfang@gmail.com)
 
 ## License
 
-AnimatedDropdownMenu is available under the MIT license. See the LICENSE file for more info.
+**AnimatedDropdownMenu** is available under the MIT license. See the LICENSE file for more info.
