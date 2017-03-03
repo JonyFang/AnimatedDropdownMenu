@@ -66,6 +66,7 @@ extension MenusListViewController: UITableViewDataSource {
         cell.menuTitleLabel.text = cellConfig.menuTitle
         cell.nameLabel.text = cellConfig.name
         cell.descriptionLabel.text = cellConfig.description
+        cell.menuTypeView.backgroundColor = cellConfig.color
         
         return cell
     }
