@@ -93,5 +93,9 @@ extension MenusListViewController: UITableViewDelegate {
             let vc = LeftTypeFiveViewController()
             navigationController?.pushViewController(vc, animated: true)
         }
+        else if indexPath.row == 5 {
+            let vc = LeftTypeSixViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }

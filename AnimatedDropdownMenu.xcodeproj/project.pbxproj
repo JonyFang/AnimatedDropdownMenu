@@ -30,6 +30,7 @@
 		D3906A591E6907830037FEC5 /* LeftTypeTreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A581E6907830037FEC5 /* LeftTypeTreeViewController.swift */; };
 		D3906A5B1E6909120037FEC5 /* LeftTypeFourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A5A1E6909120037FEC5 /* LeftTypeFourViewController.swift */; };
 		D3906A5D1E690A100037FEC5 /* LeftTypeFiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A5C1E690A100037FEC5 /* LeftTypeFiveViewController.swift */; };
+		D3906A5F1E690AF10037FEC5 /* LeftTypeSixViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3906A5E1E690AF10037FEC5 /* LeftTypeSixViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +60,7 @@
 		D3906A581E6907830037FEC5 /* LeftTypeTreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftTypeTreeViewController.swift; sourceTree = "<group>"; };
 		D3906A5A1E6909120037FEC5 /* LeftTypeFourViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftTypeFourViewController.swift; sourceTree = "<group>"; };
 		D3906A5C1E690A100037FEC5 /* LeftTypeFiveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftTypeFiveViewController.swift; sourceTree = "<group>"; };
+		D3906A5E1E690AF10037FEC5 /* LeftTypeSixViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftTypeSixViewController.swift; sourceTree = "<group>"; };
 		FFCE15753C06298EBFA4C0F7 /* Pods_AnimatedDropdownMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnimatedDropdownMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -176,6 +178,7 @@
 				D3906A581E6907830037FEC5 /* LeftTypeTreeViewController.swift */,
 				D3906A5A1E6909120037FEC5 /* LeftTypeFourViewController.swift */,
 				D3906A5C1E690A100037FEC5 /* LeftTypeFiveViewController.swift */,
+				D3906A5E1E690AF10037FEC5 /* LeftTypeSixViewController.swift */,
 			);
 			name = MenuType;
 			sourceTree = "<group>";
@@ -310,6 +313,7 @@
 				D361E8EF1E5EC31300182DED /* ViewController.swift in Sources */,
 				D3906A501E6835930037FEC5 /* MenusListTableViewCell.swift in Sources */,
 				D3906A4D1E6831CF0037FEC5 /* MenusListViewController.swift in Sources */,
+				D3906A5F1E690AF10037FEC5 /* LeftTypeSixViewController.swift in Sources */,
 				D3906A551E68EE430037FEC5 /* LeftTypeOneViewController.swift in Sources */,
 				D3906A3D1E64F5F30037FEC5 /* DropdownMenuConfig.swift in Sources */,
 				D3906A5B1E6909120037FEC5 /* LeftTypeFourViewController.swift in Sources */,
