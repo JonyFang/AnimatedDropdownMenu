@@ -61,7 +61,7 @@ class CenterTypeThreeViewController: UIViewController {
         
         let dropdownMenu = AnimatedDropdownMenu(navigationController: navigationController, containerView: view, selectedIndex: selectedStageIndex, items: dropdownItems)
         
-        dropdownMenu.cellBackgroundColor = UIColor.menuLightRedColor()
+        dropdownMenu.cellBackgroundColor = UIColor.menuPurpleColor()
         dropdownMenu.menuTitleColor = UIColor.menuLightTextColor()
         dropdownMenu.menuArrowTintColor = UIColor.menuLightTextColor()
         dropdownMenu.cellTextColor = UIColor.init(white: 1.0, alpha: 0.3)
@@ -98,7 +98,7 @@ class CenterTypeThreeViewController: UIViewController {
     fileprivate func resetNavigationBarColor() {
         
         navigationController?.navigationBar.barStyle = .black
-        navigationController?.navigationBar.barTintColor = UIColor.menuLightRedColor()
+        navigationController?.navigationBar.barTintColor = UIColor.menuPurpleColor()
         
         let textAttributes: [String: Any] = [
             NSForegroundColorAttributeName: UIColor.menuLightTextColor(),
