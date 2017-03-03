@@ -37,6 +37,9 @@ class DropdownMenuTableViewCell: UITableViewCell {
             textLabel?.frame = CGRect(x: 42, y: 0, width: cellContentFrame.width - 42, height: cellContentFrame.height)
             iconImageView.frame = CGRect(x: 16, y: (textLabel?.center.y)! - 8, width: 16, height: 16)
             break
+        case .center:
+            textLabel?.frame = cellContentFrame
+            iconImageView.frame = .zero
         default:
             break
         }

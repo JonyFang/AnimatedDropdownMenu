@@ -82,6 +82,15 @@ class AnimatedDropdownMenu: UIView {
         }
     }
     
+    public var cellTextAlignment: NSTextAlignment! {
+        get {
+            return dropdownConfig.cellTextLabelAlignment
+        }
+        set(value) {
+            dropdownConfig.cellTextLabelAlignment = value
+        }
+    }
+    
     fileprivate weak var navigationController: UINavigationController?
     fileprivate var menuButton: UIButton!
     fileprivate var menuTitleLabel: UILabel!
