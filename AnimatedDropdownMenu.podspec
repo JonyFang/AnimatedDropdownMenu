@@ -14,5 +14,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Source/*.swift'
-  s.resources = 'Sources/*.bundle'
+  s.resources = 'Source/*.bundle'
 end
