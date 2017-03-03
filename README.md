@@ -45,9 +45,9 @@ import AnimatedDropdownMenu
 
 ## Author
 
-[Weibo: @JonyFang](http://weibo.com/3034766044/profile?topnav=1&wvr=6)
-[Twitter: @JonyFang](https://twitter.com/jony_chunfang)
-[Email: jony.chunfang@gmail.com](mailto:jony.chunfang@gmail.com)
+- [Weibo: @JonyFang](http://weibo.com/3034766044/profile?topnav=1&wvr=6)
+- [Twitter: @JonyFang](https://twitter.com/jony_chunfang)
+- [Email: jony.chunfang@gmail.com](mailto:jony.chunfang@gmail.com)
 
 ## License
 
