@@ -39,7 +39,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="FVZ-Em-M6b">
-                        <barButtonItem key="backBarButtonItem" title=" " style="plain" id="vfS-ZE-QAc"/>
+                        <barButtonItem key="backBarButtonItem" title=" " id="vfS-ZE-QAc"/>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="oD5-60-VNA" id="hT3-wE-bzo"/>
