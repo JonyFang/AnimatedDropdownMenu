@@ -105,5 +105,9 @@ extension MenusListViewController: UITableViewDelegate {
             let vc = CenterTypeTwoViewController()
             navigationController?.pushViewController(vc, animated: true)
         }
+        else if indexPath.row == 8 {
+            let vc = CenterTypeThreeViewController()
+            navigationController?.pushViewController(vc, animated: true)
+        }
     }
 }
