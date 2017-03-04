@@ -17,9 +17,9 @@
     <th>Type 03</th>
     </tr>
     <tr>
-    <td><img src="https://dn-ynvsu4wa.qbox.me/a337793e797320561ae5.gif"/></td>
-    <td><img src="https://dn-ynvsu4wa.qbox.me/505b63f4b5f03b5800e6.gif"/></td>
-    <td><img src="https://dn-ynvsu4wa.qbox.me/68e850c7b41552360f14.gif"/></td>
+    <td><img src="https://dn-ynvsu4wa.qbox.me/85482a9232c248ab5aca.PNG"/></td>
+    <td><img src="https://dn-ynvsu4wa.qbox.me/8767106baa384ee28bc3.PNG"/></td>
+    <td><img src="https://dn-ynvsu4wa.qbox.me/bc46b32aacf22b459e63.PNG"/></td>
     </tr>
     <tr>
     <th>Type 04</th>
@@ -27,9 +27,9 @@
     <th>Type 06</th>
     </tr>
     <tr>
-    <td><img src="https://dn-ynvsu4wa.qbox.me/2cc3692d034e4dc39e42.gif"/></td>
-    <td><img src="https://dn-ynvsu4wa.qbox.me/8f8f2fcd41f59705a572.gif"/></td>
-    <td><img src="https://dn-ynvsu4wa.qbox.me/d2edea6f266101c312fd.gif"/></td>
+    <td><img src="https://dn-ynvsu4wa.qbox.me/4da2351118cda94556c3.PNG"/></td>
+    <td><img src="https://dn-ynvsu4wa.qbox.me/fd8abea53051a404745b.PNG"/></td>
+    <td><img src="https://dn-ynvsu4wa.qbox.me/951d3cf13599fd5cc307.PNG"/></td>
     </tr>
     <tr>
     <th>Type 07</th>
@@ -37,14 +37,20 @@
     <th>Type 09</th>
     </tr>
     <tr>
-    <td><img src="https://dn-ynvsu4wa.qbox.me/7a9ba0fb6673575944c9.gif"/></td>
-    <td><img src="https://dn-ynvsu4wa.qbox.me/719ce89da85a6a2d2820.gif"/></td>
-    <td><img src="https://dn-ynvsu4wa.qbox.me/b5b3de3a09d126101a58.gif"/></td>
+    <td><img src="https://dn-ynvsu4wa.qbox.me/772b9dfd1a1e554073b6.PNG"/></td>
+    <td><img src="https://dn-ynvsu4wa.qbox.me/48835d39aae89b6c3212.PNG"/></td>
+    <td><img src="https://dn-ynvsu4wa.qbox.me/76fa42336a0d3f7175d7.PNG"/></td>
     </tr>
     </table>
 </p>
 
 **AnimatedDropdownMenu** is a clean interface dropdown menu, appears underneath navigation bar to display a list of related items when you click on the navigation title.
+
+<p align="center">
+<table>
+<td><video src="https://dn-ynvsu4wa.qbox.me/92cb8a04df6a79a9cb7e.mov"></video</td>
+</table>
+</p>
 
 ## Requirements
 
