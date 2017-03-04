@@ -50,7 +50,7 @@ class LeftTypeFourViewController: UIViewController {
         
         let dropdownMenu = AnimatedDropdownMenu(navigationController: navigationController, containerView: view, selectedIndex: selectedStageIndex, items: dropdownItems)
         
-        dropdownMenu.cellBackgroundColor = UIColor.menuGreeColor()
+        dropdownMenu.cellBackgroundColor = UIColor.menuGreenColor()
         dropdownMenu.menuTitleColor = UIColor.menuLightTextColor()
         dropdownMenu.menuArrowTintColor = UIColor.menuLightTextColor()
         dropdownMenu.cellTextColor = UIColor.init(white: 1.0, alpha: 0.3)
@@ -85,7 +85,7 @@ class LeftTypeFourViewController: UIViewController {
     fileprivate func resetNavigationBarColor() {
         
         navigationController?.navigationBar.barStyle = .black
-        navigationController?.navigationBar.barTintColor = UIColor.menuGreeColor()
+        navigationController?.navigationBar.barTintColor = UIColor.menuGreenColor()
         
         let textAttributes: [String: Any] = [
             NSForegroundColorAttributeName: UIColor.menuLightTextColor(),

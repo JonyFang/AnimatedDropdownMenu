@@ -23,7 +23,7 @@ class MenusListConfig: NSObject {
                 menuTitle: "DropdownMenu Type 01",
                 name: "LEFT TYPE 01",
                 description: "Icon & TextColor",
-                color: UIColor.menuGreeColor()
+                color: UIColor.menuGreenColor()
             ),
             MenusListCellConfig(
                 menuTitle: "DropdownMenu Type 02",
@@ -41,7 +41,7 @@ class MenusListConfig: NSObject {
                 menuTitle: "DropdownMenu Type 04",
                 name: "LEFT TYPE 04",
                 description: "TextColor",
-                color: UIColor.menuGreeColor()
+                color: UIColor.menuGreenColor()
             ),
             MenusListCellConfig(
                 menuTitle: "DropdownMenu Type 05",
@@ -59,7 +59,7 @@ class MenusListConfig: NSObject {
                 menuTitle: "DropdownMenu Type 07",
                 name: "CENTER TYPE 01",
                 description: "TextColor",
-                color: UIColor.menuGreeColor()
+                color: UIColor.menuGreenColor()
             ),
             MenusListCellConfig(
                 menuTitle: "DropdownMenu Type 08",
