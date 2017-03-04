@@ -10,14 +10,6 @@ import UIKit
 
 extension UIColor {
     
-    class func menuBackgroundColor() -> UIColor {
-        return UIColor(red: 57/255.0, green: 67/255.0, blue: 79/255.0, alpha: 1.0)
-    }
-    
-    class func menuRedBackgroundColor() -> UIColor {
-        return UIColor(red: 98/255.0, green: 116/255.0, blue: 140/255.0, alpha: 1.0)
-    }
-    
     class func menuLightGrayColor() -> UIColor {
         return UIColor(red: 95/255.0, green: 105/255.0, blue: 117/255.0, alpha: 1.0)
     }
@@ -44,18 +36,6 @@ extension UIColor {
     
     class func menuGreenColor() -> UIColor {
         return UIColor(red: 0, green: 162/255.0, blue: 138/255.0, alpha: 1.0)
-    }
-    
-    class func menuLighBlue() -> UIColor {
-        return UIColor(red: 113/255.0, green: 195/255.0, blue: 255/255.0, alpha: 1.0)
-    }
-    
-    class func menuYellowColor() -> UIColor {
-        return UIColor(red: 243/255.0, green: 194/255.0, blue: 46/255.0, alpha: 1.0)
-    }
-    
-    class func menuSkyBlueColor() -> UIColor {
-        return UIColor(red: 102/255.0, green: 165/255.0, blue: 226/255.0, alpha: 1.0)
     }
     
 }
