@@ -1,0 +1,6 @@
+framework module AnimatedDropdownMenu {
+  umbrella header "AnimatedDropdownMenu-umbrella.h"
+
+  export *
+  module * { export * }
+}
