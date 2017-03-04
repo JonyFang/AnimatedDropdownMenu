@@ -48,7 +48,7 @@
 
 <p align="center">
 <table>
-<td><video src="https://dn-ynvsu4wa.qbox.me/92cb8a04df6a79a9cb7e.mov"></video</td>
+<td><img src="https://dn-ynvsu4wa.qbox.me/505b63f4b5f03b5800e6.gif" width="375"/></td>
 </table>
 </p>
 
