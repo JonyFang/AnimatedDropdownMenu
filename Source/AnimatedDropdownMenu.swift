@@ -215,7 +215,7 @@ public class AnimatedDropdownMenu: UIView {
     
     // MARK: - Life Cycle
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         
         menuTitleLabel.sizeToFit()
         menuTitleLabel.center = CGPoint(x: frame.size.width * 0.5, y: frame.size.height * 0.5)

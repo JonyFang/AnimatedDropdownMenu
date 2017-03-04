@@ -56,7 +56,7 @@ public class DropdownMenuTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         bounds = cellContentFrame
         contentView.frame = bounds
     }
