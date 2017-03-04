@@ -128,14 +128,14 @@
 			isa = PBXGroup;
 			children = (
 				D32B70771E6ACD8800BD2D2B /* CenterTypeOneViewController.swift */,
-				D32B70781E6ACD8800BD2D2B /* CenterTypeThreeViewController.swift */,
 				D32B70791E6ACD8800BD2D2B /* CenterTypeTwoViewController.swift */,
-				D32B707A1E6ACD8800BD2D2B /* LeftTypeFiveViewController.swift */,
-				D32B707B1E6ACD8800BD2D2B /* LeftTypeFourViewController.swift */,
+				D32B70781E6ACD8800BD2D2B /* CenterTypeThreeViewController.swift */,
 				D32B707C1E6ACD8800BD2D2B /* LeftTypeOneViewController.swift */,
-				D32B707D1E6ACD8800BD2D2B /* LeftTypeSixViewController.swift */,
-				D32B707E1E6ACD8800BD2D2B /* LeftTypeTreeViewController.swift */,
 				D32B707F1E6ACD8800BD2D2B /* LeftTypeTwoViewController.swift */,
+				D32B707E1E6ACD8800BD2D2B /* LeftTypeTreeViewController.swift */,
+				D32B707B1E6ACD8800BD2D2B /* LeftTypeFourViewController.swift */,
+				D32B707A1E6ACD8800BD2D2B /* LeftTypeFiveViewController.swift */,
+				D32B707D1E6ACD8800BD2D2B /* LeftTypeSixViewController.swift */,
 			);
 			path = MenuTypes;
 			sourceTree = "<group>";
