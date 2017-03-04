@@ -39,15 +39,15 @@ public class DropdownMenuTableView: UITableView {
 
 extension DropdownMenuTableView: UITableViewDataSource {
     
-    func numberOfSections(in tableView: UITableView) -> Int {
+    public func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = DropdownMenuTableViewCell(style: .default, reuseIdentifier: kDropdownMenuTableViewCell, config: dropdownMenuConfig)
         cell.textLabel?.text = items[indexPath.row].title
@@ -58,18 +58,18 @@ extension DropdownMenuTableView: UITableViewDataSource {
 
 extension DropdownMenuTableView: UITableViewDelegate {
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return dropdownMenuConfig.cellHeight
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         selectedIndex = indexPath.row
         selectRowAtIndexPathHandler!(indexPath.row)
         reloadData()
     }
     
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
         
         guard dropdownMenuConfig.shouldKeepSelectedCellColor! else {
             return
