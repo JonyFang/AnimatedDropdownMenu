@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DropdownMenuCellSeparator: UIView {
+public class DropdownMenuCellSeparator: UIView {
 
     var separatorColor: UIColor {
         get {
@@ -24,7 +24,7 @@ class DropdownMenuCellSeparator: UIView {
         initialize()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         initialize()
     }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DropdownMenuTableViewCell: UITableViewCell {
+public class DropdownMenuTableViewCell: UITableViewCell {
     
     var iconImageView: UIImageView!
     var cellSeparator: DropdownMenuCellSeparator!
@@ -52,7 +52,7 @@ class DropdownMenuTableViewCell: UITableViewCell {
         contentView.addSubview(cellSeparator)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     

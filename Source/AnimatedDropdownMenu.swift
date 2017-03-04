@@ -8,16 +8,22 @@
 
 import UIKit
 
-class AnimatedDropdownMenu: UIView {
+public class AnimatedDropdownMenu: UIView {
     
     public struct Item {
         public let title: String
         public let icon: UIImage?
         public let iconLight: UIImage?
+        
+        public init(_ title: String, _ icon: UIImage?, _ iconLight: UIImage?) {
+            self.title = title
+            self.icon = icon
+            self.iconLight = iconLight
+        }
     }
     
     public var didSelectItemAtIndexHandler: ((_ indexPath: Int) -> ())?
-    public var isShown: Bool!
+    public var isShown: Bool! = false
     
     public var menuTitleColor: UIColor! {
         get {

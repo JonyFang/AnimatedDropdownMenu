@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DropdownMenuConfig {
+public class DropdownMenuConfig {
     
     var menuTitleColor: UIColor?
     var menuTitleFont: UIFont!

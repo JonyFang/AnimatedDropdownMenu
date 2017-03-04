@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DropdownMenuTableView: UITableView {
+public class DropdownMenuTableView: UITableView {
     
     public var selectRowAtIndexPathHandler: ((_ indexPath: Int) -> ())?
     
@@ -17,7 +17,7 @@ class DropdownMenuTableView: UITableView {
     fileprivate var dropdownMenuConfig: DropdownMenuConfig!
     fileprivate let kDropdownMenuTableViewCell = "DropdownMenuTableViewCell"
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
