@@ -56,6 +56,7 @@ class LeftTypeFiveViewController: UIViewController {
         dropdownMenu.menuArrowTintColor = UIColor.menuLightTextColor()
         dropdownMenu.cellTextColor = UIColor.menuLightTextColor()
         dropdownMenu.cellTextAlignment = .left
+        dropdownMenu.cellSeparatorColor = .clear
         
         dropdownMenu.didSelectItemAtIndexHandler = {
             [weak self] selectedIndex in

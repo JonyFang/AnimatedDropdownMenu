@@ -56,6 +56,7 @@ class CenterTypeTwoViewController: UIViewController {
         dropdownMenu.menuArrowTintColor = UIColor.menuLightTextColor()
         dropdownMenu.cellTextColor = UIColor.menuLightTextColor()
         dropdownMenu.cellTextAlignment = .center
+        dropdownMenu.cellSeparatorColor = .clear
         
         dropdownMenu.didSelectItemAtIndexHandler = {
             [weak self] selectedIndex in
