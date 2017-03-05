@@ -55,6 +55,7 @@ class LeftTypeFourViewController: UIViewController {
         dropdownMenu.menuArrowTintColor = UIColor.menuLightTextColor()
         dropdownMenu.cellTextColor = UIColor.init(white: 1.0, alpha: 0.3)
         dropdownMenu.cellTextSelectedColor = UIColor.menuLightTextColor()
+        dropdownMenu.cellTextAlignment = .left
         
         dropdownMenu.didSelectItemAtIndexHandler = {
             [weak self] selectedIndex in

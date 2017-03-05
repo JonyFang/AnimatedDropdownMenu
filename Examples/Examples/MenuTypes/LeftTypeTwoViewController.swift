@@ -63,7 +63,9 @@ class LeftTypeTwoViewController: UIViewController {
         dropdownMenu.cellSelectedColor = UIColor.menuDarkRedColor()
         dropdownMenu.menuTitleColor = UIColor.menuLightTextColor()
         dropdownMenu.menuArrowTintColor = UIColor.menuLightTextColor()
+        dropdownMenu.menuArrowTintColor = UIColor.menuLightTextColor()
         dropdownMenu.cellTextColor = UIColor.menuLightTextColor()
+        dropdownMenu.cellTextAlignment = .left
         
         dropdownMenu.didSelectItemAtIndexHandler = {
             [weak self] selectedIndex in

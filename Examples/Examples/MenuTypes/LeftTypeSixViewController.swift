@@ -56,6 +56,7 @@ class LeftTypeSixViewController: UIViewController {
         dropdownMenu.cellTextColor = UIColor.init(white: 1.0, alpha: 0.3)
         dropdownMenu.cellTextSelectedColor = UIColor.menuLightTextColor()
         dropdownMenu.cellSeparatorColor = UIColor.init(white: 1.0, alpha: 0.1)
+        dropdownMenu.cellTextAlignment = .left
         
         dropdownMenu.didSelectItemAtIndexHandler = {
             [weak self] selectedIndex in
