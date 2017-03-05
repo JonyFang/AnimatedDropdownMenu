@@ -97,10 +97,6 @@ class ExampleViewController: UIViewController {
     fileprivate var lastStageIndex: Int = 0
     fileprivate var dropdownMenu: AnimatedDropdownMenu!
 
-    ...
-
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAnimatedDropdownMenu()
@@ -109,9 +105,7 @@ class ExampleViewController: UIViewController {
     fileprivate func setupAnimatedDropdownMenu() {
         
         let dropdownMenu = AnimatedDropdownMenu(navigationController: navigationController, containerView: view, selectedIndex: selectedStageIndex, items: dropdownItems)
-
         dropdownMenu.cellTextAlignment = .center
-        
         dropdownMenu.didSelectItemAtIndexHandler = {
             [weak self] selectedIndex in
             
