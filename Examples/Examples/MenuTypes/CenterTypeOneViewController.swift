@@ -56,6 +56,7 @@ class CenterTypeOneViewController: UIViewController {
         dropdownMenu.cellTextColor = UIColor.init(white: 1.0, alpha: 0.3)
         dropdownMenu.cellTextSelectedColor = UIColor.menuLightTextColor()
         dropdownMenu.cellTextAlignment = .center
+        dropdownMenu.cellSeparatorColor = .clear
         
         dropdownMenu.didSelectItemAtIndexHandler = {
             [weak self] selectedIndex in

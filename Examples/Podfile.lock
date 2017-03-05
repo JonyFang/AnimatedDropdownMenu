@@ -1,11 +1,11 @@
 PODS:
-  - AnimatedDropdownMenu (0.3.2)
+  - AnimatedDropdownMenu (0.3.3)
 
 DEPENDENCIES:
   - AnimatedDropdownMenu
 
 SPEC CHECKSUMS:
-  AnimatedDropdownMenu: dbefe3ad4719346c71b6658533596cc63ad5c055
+  AnimatedDropdownMenu: 64460794ca55b0672fced8720c51c405e2b6f5a7
 
 PODFILE CHECKSUM: f3a48800b94d8c2b8e6d84ae7bc6140f3718fdeb
 
