@@ -86,48 +86,44 @@ import AnimatedDropdownMenu
 
 class ExampleViewController: UIViewController {
     // MARK: - Properties
+    fileprivate var selectedStageIndex: Int = 0
     fileprivate let dropdownItems: [AnimatedDropdownMenu.Item] = [
         AnimatedDropdownMenu.Item.init("EXPLORE", nil, nil),
         AnimatedDropdownMenu.Item.init("POPULAR", nil, nil),
         AnimatedDropdownMenu.Item.init("RECENT", nil, nil)
     ]
-    
-    fileprivate var selectedStageIndex: Int = 0
-    fileprivate var lastStageIndex: Int = 0
-    fileprivate var dropdownMenu: AnimatedDropdownMenu!
 
     // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        setupAnimatedDropdownMenu()
-    }
-    
-    // MARK: Private Method
-    fileprivate func setupAnimatedDropdownMenu() {
-
+        
         let dropdownMenu = AnimatedDropdownMenu(navigationController: navigationController, containerView: view, selectedIndex: selectedStageIndex, items: dropdownItems)
-        dropdownMenu.cellTextAlignment = .center
         dropdownMenu.didSelectItemAtIndexHandler = {
             [weak self] selectedIndex in
             guard let strongSelf = self else {
                 return
             }
-            
-            strongSelf.lastStageIndex = strongSelf.selectedStageIndex
             strongSelf.selectedStageIndex = selectedIndex
-            
-            guard strongSelf.selectedStageIndex != strongSelf.lastStageIndex else {
-                return
-            }
-            
             //Configure Selected Action
         }
-        
-        self.dropdownMenu = dropdownMenu
+
         navigationItem.titleView = dropdownMenu
     }
 }
 ```
+
+### Customization
+
+Once you have setup the dropdown menu, you can custom the interface of menu. You can override these properties for your favor:
+
+- `menuTitleColor`: **The font of the navigation bar title.** Default is `UIFont.systemFont(ofSize: 16.0)`
+- `menuArrowTintColor`: **The tint color of the arrow.** Default is `.darkGray`
+- `cellBackgroundColor`: **The color of the cell background.** Default is `RGBA(216, 85, 96, 1)`
+- `cellSelectedColor`: **The color of the cell when the cell is selected.** Default is `.clear`
+- `cellSeparatorColor`: **The color of the cell separator.** Default is `RGBA(255, 255, 255, 0.3)`
+- `cellTextColor`: **The color of the text inside cell.** Default is `RGBA(245, 245, 245, 1)`
+- `cellTextSelectedColor`: **The color of the text inside cell when the cell is selected.** Default is `RGBA(160, 61, 73)`
+- `cellTextAlignment`: **The alignment of the text inside cell.** Default is `.center`
 
 ## Author
 

@@ -49,15 +49,15 @@ public class DropdownMenuConfig {
         menuTitleFont = UIFont.systemFont(ofSize: 16.0)
             
         cellHeight = 50.0
-        cellBackgroundColor = UIColor.white
+        cellBackgroundColor = UIColor(red: 216/255.0, green: 85/255.0, blue: 96/255.0, alpha: 1.0)
         cellSelectedColor = UIColor.clear
         cellSeparatorColor = UIColor.init(white: 1.0, alpha: 0.3)
         cellTextLabelColor = UIColor.darkGray
         cellTextLabelFont = UIFont.systemFont(ofSize: 15.0)
-        cellTextLabelAlignment = .left
-        cellTextLabelSelectedColor = UIColor.clear
+        cellTextLabelAlignment = .center
+        cellTextLabelSelectedColor = UIColor(red: 160/255.0, green: 61/255.0, blue: 73/255.0, alpha: 1.0)
         
-        arrowTintColor = UIColor.white
+        arrowTintColor = UIColor.darkGray
         arrowPadding = 10.0
         arrowImage = UIImage(contentsOfFile: arrowImagePath!)
         
