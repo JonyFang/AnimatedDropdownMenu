@@ -52,10 +52,10 @@ public class DropdownMenuConfig {
         cellBackgroundColor = UIColor(red: 216/255.0, green: 85/255.0, blue: 96/255.0, alpha: 1.0)
         cellSelectedColor = UIColor.clear
         cellSeparatorColor = UIColor.init(white: 1.0, alpha: 0.3)
-        cellTextLabelColor = UIColor.darkGray
+        cellTextLabelColor = UIColor.init(white: 1.0, alpha: 0.3)
         cellTextLabelFont = UIFont.systemFont(ofSize: 15.0)
         cellTextLabelAlignment = .center
-        cellTextLabelSelectedColor = UIColor(red: 160/255.0, green: 61/255.0, blue: 73/255.0, alpha: 1.0)
+        cellTextLabelSelectedColor = UIColor.white
         
         arrowTintColor = UIColor.darkGray
         arrowPadding = 10.0

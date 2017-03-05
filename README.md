@@ -121,8 +121,8 @@ Once you have setup the dropdown menu, you can custom the interface of menu. You
 - `cellBackgroundColor`: **The color of the cell background.** Default is `RGBA(216, 85, 96, 1)`
 - `cellSelectedColor`: **The color of the cell when the cell is selected.** Default is `.clear`
 - `cellSeparatorColor`: **The color of the cell separator.** Default is `RGBA(255, 255, 255, 0.3)`
-- `cellTextColor`: **The color of the text inside cell.** Default is `RGBA(245, 245, 245, 1)`
-- `cellTextSelectedColor`: **The color of the text inside cell when the cell is selected.** Default is `RGBA(160, 61, 73, 1.0)`
+- `cellTextColor`: **The color of the text inside cell.** Default is `RGBA(255, 255, 255, 0.3)`
+- `cellTextSelectedColor`: **The color of the text inside cell when the cell is selected.** Default is `.white`
 - `cellTextAlignment`: **The alignment of the text inside cell.** Default is `.center`
 
 ## Author
