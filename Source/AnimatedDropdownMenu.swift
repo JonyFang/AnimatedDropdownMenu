@@ -40,7 +40,7 @@ public class AnimatedDropdownMenu: UIView {
         }
         set(value) {
             dropdownConfig.arrowTintColor = value
-            arrowImage.tintColor = dropdownConfig.arrowTintColor
+            menuArrow.tintColor = dropdownConfig.arrowTintColor
         }
     }
     
