@@ -47,9 +47,7 @@
 **AnimatedDropdownMenu** is a clean interface dropdown menu, appears underneath navigation bar to display a list of related items when you click on the navigation title.
 
 <p align="center">
-<table>
 <td><img src="https://dn-ynvsu4wa.qbox.me/505b63f4b5f03b5800e6.gif" width="375"/></td>
-</table>
 </p>
 
 ## Requirements
