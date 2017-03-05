@@ -56,7 +56,14 @@
 
 ## Example
 
-To run the example project, clone the repo, and start `iOS-Example` in Xcode.
+To run the example project, clone the repo, and start `Examples` in Xcode.
+
+```ruby
+git clone https://github.com/JonyFang/AnimatedDropdownMenu
+cd AnimatedDropdownMenu/Examples
+pod install --no-repo-update
+open Examples.xcworkspace
+```
 
 ## Installation
 
