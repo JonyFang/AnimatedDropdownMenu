@@ -85,7 +85,6 @@ Import the library where you want to use it.
 import AnimatedDropdownMenu
 
 class ExampleViewController: UIViewController {
-
     // MARK: - Properties
     fileprivate let dropdownItems: [AnimatedDropdownMenu.Item] = [
         AnimatedDropdownMenu.Item.init("EXPLORE", nil, nil),
@@ -97,18 +96,19 @@ class ExampleViewController: UIViewController {
     fileprivate var lastStageIndex: Int = 0
     fileprivate var dropdownMenu: AnimatedDropdownMenu!
 
+    // MARK: Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupAnimatedDropdownMenu()
     }
-
+    
+    // MARK: Private Method
     fileprivate func setupAnimatedDropdownMenu() {
         
         let dropdownMenu = AnimatedDropdownMenu(navigationController: navigationController, containerView: view, selectedIndex: selectedStageIndex, items: dropdownItems)
         dropdownMenu.cellTextAlignment = .center
         dropdownMenu.didSelectItemAtIndexHandler = {
             [weak self] selectedIndex in
-            
             guard let strongSelf = self else {
                 return
             }
