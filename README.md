@@ -1,6 +1,9 @@
 <p align="center">
     <img src="https://dn-ynvsu4wa.qbox.me/16f7940346e6cfc5ddf9.png" alt="AnimatedDropdownMenu" title="AnimatedDropdownMenu" width="1000">
 </p>
+
+**AnimatedDropdownMenu** is a clean interface dropdown menu, appears underneath navigation bar to display a list of related items when you click on the navigation title.
+
 <p align="center">
     <!-- <a href=""><img src="https://api.travis-ci.org/JonyFang/AnimatedDropdownMenu.svg?branch=master"></a> -->
     <a href="https://cocoapods.org/pods/AnimatedDropdownMenu"><img src="https://img.shields.io/cocoapods/p/AnimatedDropdownMenu.svg?style=flat"></a>
@@ -9,6 +12,8 @@
     <a href="https://cocoapods.org/pods/AnimatedDropdownMenu"><img src="https://img.shields.io/cocoapods/v/AnimatedDropdownMenu.svg?style=flat"></a>
     <a href="http://mit-license.org"><img src="https://img.shields.io/cocoapods/l/AnimatedDropdownMenu.svg?style=flat"></a>
 </p>
+
+
 <p align="center">
     <table>
     <tr>
@@ -43,8 +48,6 @@
     </tr>
     </table>
 </p>
-
-**AnimatedDropdownMenu** is a clean interface dropdown menu, appears underneath navigation bar to display a list of related items when you click on the navigation title.
 
 ## Requirements
 
