@@ -187,7 +187,7 @@ public class AnimatedDropdownMenu: UIView {
         backgroundView.addGestureRecognizer(backgroundTapRecognizer)
         
         //Setup Default Configuratin
-        setupDefaultConfiguration()
+        //setupDefaultConfiguration()
         
         //Setup TableView
         tableView = DropdownMenuTableView(frame: CGRect(x: menuWrapperBounds.origin.x, y: -300.0, width: menuWrapperBounds.width, height: 300.0 + dropdownConfig.cellHeight * CGFloat(items.count)), items: items, selectedIndex: selectedIndex, config: dropdownConfig)
