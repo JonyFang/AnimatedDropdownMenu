@@ -83,7 +83,56 @@ Import the library where you want to use it.
 
 ```swift
 import AnimatedDropdownMenu
-//TODO:...
+
+class ExampleViewController: UIViewController {
+
+    // MARK: - Properties
+    fileprivate let dropdownItems: [AnimatedDropdownMenu.Item] = [
+        AnimatedDropdownMenu.Item.init("EXPLORE", nil, nil),
+        AnimatedDropdownMenu.Item.init("POPULAR", nil, nil),
+        AnimatedDropdownMenu.Item.init("RECENT", nil, nil)
+    ]
+    
+    fileprivate var selectedStageIndex: Int = 0
+    fileprivate var lastStageIndex: Int = 0
+    fileprivate var dropdownMenu: AnimatedDropdownMenu!
+
+    ...
+
+
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupAnimatedDropdownMenu()
+    }
+
+    fileprivate func setupAnimatedDropdownMenu() {
+        
+        let dropdownMenu = AnimatedDropdownMenu(navigationController: navigationController, containerView: view, selectedIndex: selectedStageIndex, items: dropdownItems)
+
+        dropdownMenu.cellTextAlignment = .center
+        
+        dropdownMenu.didSelectItemAtIndexHandler = {
+            [weak self] selectedIndex in
+            
+            guard let strongSelf = self else {
+                return
+            }
+            
+            strongSelf.lastStageIndex = strongSelf.selectedStageIndex
+            strongSelf.selectedStageIndex = selectedIndex
+            
+            guard strongSelf.selectedStageIndex != strongSelf.lastStageIndex else {
+                return
+            }
+            
+            //Configure Selected Action
+        }
+        
+        self.dropdownMenu = dropdownMenu
+        navigationItem.titleView = dropdownMenu
+    }
+}
 ```
 
 ## Author
