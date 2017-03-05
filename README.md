@@ -104,7 +104,7 @@ class ExampleViewController: UIViewController {
     
     // MARK: Private Method
     fileprivate func setupAnimatedDropdownMenu() {
-        
+
         let dropdownMenu = AnimatedDropdownMenu(navigationController: navigationController, containerView: view, selectedIndex: selectedStageIndex, items: dropdownItems)
         dropdownMenu.cellTextAlignment = .center
         dropdownMenu.didSelectItemAtIndexHandler = {
@@ -134,6 +134,10 @@ class ExampleViewController: UIViewController {
 - [Weibo: @JonyFang](http://weibo.com/3034766044/profile?topnav=1&wvr=6)
 - [Twitter: @JonyFang](https://twitter.com/jony_chunfang)
 - [Email: jony.chunfang@gmail.com](mailto:jony.chunfang@gmail.com)
+
+## Contributing
+
+Please open a [new Issue here](https://github.com/JonyFang/AnimatedDropdownMenu/issues/new) if you run into a problem specific to **AnimatedDropdownMenu**, have a feature request, or want to share a comment.
 
 ## License
 
